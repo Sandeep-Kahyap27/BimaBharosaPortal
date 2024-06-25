@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BimaBharosaPortal(failed)">
+    <classes>
+      <class name="ComplaintRegistrationModule.Test_URLCaseSensitive_Negative">
+        <methods>
+          <include name="setup"/>
+          <include name="reportTearDown"/>
+          <include name="afterFailedTestMethod"/>
+          <include name="test_caseSensitiveURL"/>
+          <include name="teardown"/>
+          <include name="reportSetup"/>
+        </methods>
+      </class> <!-- ComplaintRegistrationModule.Test_URLCaseSensitive_Negative -->
+    </classes>
+  </test> <!-- BimaBharosaPortal(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

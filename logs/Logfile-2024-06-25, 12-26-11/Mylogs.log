@@ -1,0 +1,3 @@
+2024-06-25T12:26:45,462 [main] INFO  (Test_CallCenterDoesNotPertain.java:43) - Test Pass : Navigation to the Does Not Pertain page is successful
+2024-06-25T12:26:45,621 [main] INFO  (Test_CallCenterDoesNotPertain.java:62) - Test Pass : Test Pass : The table contain the default data
+2024-06-25T12:26:45,744 [main] INFO  (Test_CallCenterDoesNotPertain.java:80) - Test Pass : The table contain the Specific data
