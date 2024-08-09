@@ -1,0 +1,4 @@
+2024-06-24T14:14:32,886 [main] INFO  (Test_CallCenterModule.java:50) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-24T14:14:38,228 [main] INFO  (Test_CallCenterModule.java:75) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-24T14:14:40,425 [main] ERROR (Test_CallCenterModule.java:973) - Test Failed : LogOff functionality not working as expected!
+2024-06-24T14:14:42,518 [main] INFO  (Test_CallCenterModule.java:988) - Test Passed : Call center user is able to logOff successfully

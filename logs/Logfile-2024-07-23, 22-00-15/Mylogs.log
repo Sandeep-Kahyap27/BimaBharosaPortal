@@ -1,0 +1,6 @@
+2024-07-23T22:01:26,850 [main] INFO  (Test_UploadComplaintsPage.java:47) - Test Passed : Upload complaints page URL is as expected
+2024-07-23T22:01:26,867 [main] INFO  (Test_UploadComplaintsPage.java:66) - Test Passed : Upload complaints page title is as expected
+2024-07-23T22:01:27,079 [main] ERROR (Test_UploadComplaintsPage.java:88) - Test Failed : Upload excel file field not displayed
+2024-07-23T22:01:27,126 [main] INFO  (Test_UploadComplaintsPage.java:93) - Test Passed : Upload button enabled and visible
+2024-07-23T22:01:27,157 [main] INFO  (Test_UploadComplaintsPage.java:103) - Test Passed : Clear button enabled and visible
+2024-07-23T22:01:27,189 [main] INFO  (Test_UploadComplaintsPage.java:113) - Test Passed : DownloadTemplate button visible and enabled

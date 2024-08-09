@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaSuite">
+    <listeners>
+        <listener class-name="Utilities.Screenshot"/>
+        <listener class-name="Utilities.TestNGExcelReport"/>
+    </listeners>
+    <test name="LoginModule">
+        <classes>
+            <class name="InsurerModule.Test_1_ViewEditComplaintPage_Visibility"></class>
+            <class name="InsurerModule.Test_2_SearchComplaintByStatus"></class>
+            <class name="InsurerModule.Test_3_SearchComplaintByComplaintNumber"></class>
+            <class name="InsurerModule.Test_4_SearchComplaintByClosureRequest"></class>
+            <class name="InsurerModule.Test_5_UpdateComplaint_NewToClosed_Positive"></class>
+            <class name="InsurerModule.Test_6_DoesNotPertain_NewComplaintStatus"></class>
+            <class name="InsurerModule.Test_7_ComplaintdescriptionPage"></class>
+            <class name="InsurerModule.Test_8_ViewEditComplaintPage_Mandatory_NewStatus_Negative"></class>
+            <class name="InsurerModule.Test_9_New_Status_PolicyDetailsByInsurerPage"></class>
+            <class name="InsurerModule.Test_10_DoesNotPertain_AcknowledgeComplaintStatus"></class>
+            <class name="InsurerModule.Test_11_Ack_Status_PolicyDetailsByInsurerPage"></class>
+            <class name="InsurerModule.Test_12_DoesNotPertain_PendingComplaintStatus"></class>
+            <class name="InsurerModule.Test_13_Pen_Status_PolicyDetailsbyInsurerPage"></class>
+            <class name="InsurerModule.Test_14_DoesNotPertain_Invisible_atAttendedToComplaintStatus"></class>
+            <class name="InsurerModule.Test_15_TypeOfDisposal_ComplaintUpdatePendingToAttendedTo_Positive"></class>
+            <class name="InsurerModule.Test_16_UpdateComplaint_EscToReopenStatus"></class>
+            <class name="InsurerModule.Test_17_UpdateComplaint_ReopenToAttendedStatus"></class>
+            <class name="InsurerModule.Test_18_FeedbackAndResolutionSatisfactionFields_at_PolicyholderTrackComplaint"></class>
+            <class name="InsurerModule.Test_19_ClosureRequestTo_IRDAI"></class>
+            <class name="InsurerModule.Test_20_paginationFunctionality"></class>
+            <class name="InsurerModule.Test_21_LogoutFunctionality"></class>
+        </classes>
+    </test>
+</suite>

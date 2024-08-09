@@ -1,0 +1,12 @@
+2024-06-26T17:17:30,830 [main] INFO  (Test_CallCenterModule.java:50) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-26T17:17:36,578 [main] ERROR (Test_CallCenterModule.java:79) - Test Failed : User is not able to open Registration Against Entity By IRDAI Page
+2024-06-26T17:17:36,640 [main] INFO  (Test_CallCenterModule.java:94) - Test Passed : Identify By drop down is visible on the web page
+2024-06-26T17:17:36,675 [main] INFO  (Test_CallCenterModule.java:104) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-26T17:17:36,706 [main] INFO  (Test_CallCenterModule.java:114) - Test Passed : Search button present on the web page
+2024-06-26T17:17:36,769 [main] INFO  (Test_CallCenterModule.java:124) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-26T17:17:36,943 [main] INFO  (Test_CallCenterModule.java:134) - Test Passe : All fields related to complaint classification is visible on registration page
+2024-06-26T17:17:37,083 [main] INFO  (Test_CallCenterModule.java:144) - Test Passe : Policy/Proposal Number/Certificate Number/Claim Number radio buttons are displayed
+2024-06-26T17:17:37,146 [main] INFO  (Test_CallCenterModule.java:154) - Test Passed : Policy number field is visible and enabled
+2024-06-26T17:17:37,193 [main] INFO  (Test_CallCenterModule.java:164) - Test Passed : Complaint details field is visible and enabled
+2024-06-26T17:17:37,363 [main] ERROR (Test_CallCenterModule.java:178) - Test Failed : Register button either not displayed or enabled
+2024-06-26T17:17:47,898 [main] ERROR (Test_CallCenterModule.java:201) - Test Failed : Back button functionality not working by dismissing alert pop up!

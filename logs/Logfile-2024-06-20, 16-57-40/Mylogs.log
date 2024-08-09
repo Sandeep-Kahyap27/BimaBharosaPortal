@@ -1,0 +1,19 @@
+2024-06-20T16:58:09,154 [main] INFO  (Test_CallCenterModule.java:46) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-20T16:58:14,047 [main] INFO  (Test_CallCenterModule.java:71) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-20T16:58:14,093 [main] INFO  (Test_CallCenterModule.java:90) - Test Passed : Identify By drop down is visible on the web page
+2024-06-20T16:58:14,123 [main] INFO  (Test_CallCenterModule.java:100) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-20T16:58:14,150 [main] INFO  (Test_CallCenterModule.java:110) - Test Passed : Search button present on the web page
+2024-06-20T16:58:14,196 [main] INFO  (Test_CallCenterModule.java:120) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-20T16:58:18,353 [main] INFO  (Test_CallCenterModule.java:140) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-20T16:58:19,575 [main] INFO  (Test_CallCenterModule.java:160) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-20T16:58:19,590 [main] INFO  (Test_CallCenterModule.java:178) - Test Passed : Search button is enabled
+2024-06-20T16:58:23,790 [main] INFO  (Test_CallCenterModule.java:267) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-20T16:58:23,893 [main] INFO  (Test_CallCenterModule.java:372) - Test Passed : Pin code field is visible
+2024-06-20T16:58:27,111 [main] INFO  (Test_CallCenterModule.java:412) - Test Passed : District and state auto populated for valid pinCode
+2024-06-20T16:58:27,194 [main] INFO  (Test_CallCenterModule.java:428) - Test Passed : Call center user is able to interact with complaint against dropdown
+2024-06-20T16:58:29,441 [main] INFO  (Test_CallCenterModule.java:445) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-20T16:58:29,501 [main] INFO  (Test_CallCenterModule.java:572) - Test Passed : All identifier type radio buttons are enabled
+2024-06-20T16:58:29,700 [main] INFO  (Test_CallCenterModule.java:592) - Test Passed : Error message displayed for empty policy/proposal/certificate/claim number field
+2024-06-20T16:58:34,002 [main] INFO  (Test_CallCenterModule.java:628) - Test Passed : Error message displayed for empty complaint details field
+2024-06-20T16:58:35,219 [main] INFO  (Test_CallCenterModule.java:648) - Test Passed : Error message displayed for special characters entered in complaint details field
+2024-06-20T16:58:45,920 [main] INFO  (Test_CallCenterModule.java:669) - Test Passed : Alert pop up displayed when reaching maximum limit

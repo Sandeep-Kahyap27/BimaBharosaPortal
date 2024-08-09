@@ -1,0 +1,6 @@
+2024-06-06T16:39:53,319 [main] INFO  (Test_CallCenterModule.java:42) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-06T16:40:00,594 [main] INFO  (Test_CallCenterModule.java:67) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-06T16:40:00,621 [main] INFO  (Test_CallCenterModule.java:86) - Test Passed : Identify By drop down is visible on the web page
+2024-06-06T16:40:00,637 [main] INFO  (Test_CallCenterModule.java:96) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-06T16:40:00,668 [main] INFO  (Test_CallCenterModule.java:106) - Test Passed : Search button present on the web page
+2024-06-06T16:40:00,703 [main] ERROR (Test_CallCenterModule.java:120) - Test Failed : PinCode checkbox and field not visible

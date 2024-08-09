@@ -1,0 +1,129 @@
+2024-06-24T15:30:39,050 [main] INFO  (Test_CallCenterModule.java:50) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-24T15:30:44,252 [main] INFO  (Test_CallCenterModule.java:75) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-24T15:30:45,661 [main] INFO  (Test_CallCenterModule.java:164) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-24T15:30:50,002 [main] INFO  (Test_CallCenterModule.java:271) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-24T15:30:50,131 [main] INFO  (Test_CallCenterModule.java:576) - Test Passed : All identifier type radio buttons are enabled
+2024-06-24T15:30:50,501 [main] INFO  (Test_CallCenterModule.java:596) - Test Passed : Error message displayed for empty policy/proposal/certificate/claim number field
+2024-06-24T15:31:02,208 [main] INFO  (Test_CallCenterModule.java:616) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-24T15:31:06,809 [main] INFO  (Test_CallCenterModule.java:640) - Test Passed : Error message displayed for empty complaint details field
+2024-06-24T15:31:08,162 [main] INFO  (Test_CallCenterModule.java:660) - Test Passed : Error message displayed for special characters entered in complaint details field
+2024-06-24T15:31:31,071 [main] INFO  (Test_CallCenterModule.java:680) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-24T15:31:32,535 [main] INFO  (Test_CallCenterModule.java:700) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-24T15:31:40,931 [main] INFO  (Test_CallCenterModule.java:720) - Test Passed : Error message displayed when date of letter not selected
+2024-06-24T15:31:41,730 [main] INFO  (Test_CallCenterModule.java:739) - Test Passed : Error message displayed for invalid date format
+2024-06-24T15:31:43,218 [main] INFO  (Test_CallCenterModule.java:759) - Test Passed : Error message displayed when date of receipt of complaint not selected
+2024-06-24T15:31:44,052 [main] INFO  (Test_CallCenterModule.java:778) - Test Passed : Error message displayed for date of receipt of complaint with invalid date format
+2024-06-24T15:31:47,618 [main] INFO  (Test_CallCenterModule.java:801) - Test Passed : Call center user is not able to upload other file formats
+2024-06-24T15:31:49,909 [main] INFO  (Test_CallCenterModule.java:823) - Test Passed : Call center user is not able to upload more than 10mb size file
+2024-06-24T15:31:52,498 [main] INFO  (Test_CallCenterModule.java:844) - Test Passed : Error message displayed for special characters entered in priority handling details field
+2024-06-24T15:32:15,595 [main] INFO  (Test_CallCenterModule.java:862) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-24T15:32:16,238 [main] INFO  (Test_CallCenterModule.java:882) - Test Passed : Error message displayed for special characters entered in remarks field
+2024-06-24T15:32:41,619 [main] INFO  (Test_CallCenterModule.java:901) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-24T15:32:49,051 [main] INFO  (Test_CallCenterModule.java:925) - Test Passed : Back button functionality is working by dismissing alert pop up
+2024-06-24T15:32:50,379 [main] ERROR (Test_CallCenterModule.java:953) - Test Failed : Back button functionality not working by accepting alert pop up!
+2024-06-24T15:32:51,467 [main] ERROR (MainClass.java:118) - org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="Logout" class="btn btn-secondary quit">...</button> is not clickable at point (1237, 67). Other element would receive the click: <div class="modal show" id="confirmationDialog" style="display: block; padding-right: 8px;">...</div>
+  (Session info: chrome=126.0.6478.115)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [58054076eb8b51c628486806c85e078a, clickElement {id=f.46A19A9FC4B7CE2E661694BC9F0E66D6.d.A7DDEADFDE53DEAEC8A14EB8090C594C.e.390}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.115, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55760/devtoo..., se:cdpVersion: 126.0.6478.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (58054076eb8b51c628486806c85e078a)] -> xpath: //button[@id='Logout']]
+Session ID: 58054076eb8b51c628486806c85e078a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at ObjectRepository.CallcenterRegPage.logOutCancel(CallcenterRegPage.java:874)
+	at CallCenterModule.Test_CallCenterModule.test_verify_logoff_unsuccess(Test_CallCenterModule.java:964)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2024-06-24T15:32:52,564 [main] ERROR (MainClass.java:118) - org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="Logout" class="btn btn-secondary quit">...</button> is not clickable at point (1237, 67). Other element would receive the click: <div class="modal show" id="confirmationDialog" style="display: block; padding-right: 8px;">...</div>
+  (Session info: chrome=126.0.6478.115)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [58054076eb8b51c628486806c85e078a, clickElement {id=f.46A19A9FC4B7CE2E661694BC9F0E66D6.d.A7DDEADFDE53DEAEC8A14EB8090C594C.e.390}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.115, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55760/devtoo..., se:cdpVersion: 126.0.6478.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (58054076eb8b51c628486806c85e078a)] -> xpath: //button[@id='Logout']]
+Session ID: 58054076eb8b51c628486806c85e078a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at ObjectRepository.CallcenterRegPage.logOutSuccess(CallcenterRegPage.java:863)
+	at CallCenterModule.Test_CallCenterModule.test_verify_logoff_successfully(Test_CallCenterModule.java:984)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+

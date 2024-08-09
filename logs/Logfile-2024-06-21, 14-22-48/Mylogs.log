@@ -1,0 +1,17 @@
+2024-06-21T14:23:15,278 [main] INFO  (Test_CallCenterModule.java:47) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-21T14:23:20,615 [main] INFO  (Test_CallCenterModule.java:72) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-21T14:23:22,145 [main] INFO  (Test_CallCenterModule.java:161) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-21T14:23:26,497 [main] INFO  (Test_CallCenterModule.java:268) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-21T14:23:26,786 [main] INFO  (Test_CallCenterModule.java:373) - Test Passed : Pin code field is visible
+2024-06-21T14:23:30,331 [main] INFO  (Test_CallCenterModule.java:413) - Test Passed : District and state auto populated for valid pinCode
+2024-06-21T14:23:32,955 [main] INFO  (Test_CallCenterModule.java:446) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-21T14:23:37,808 [main] INFO  (Test_CallCenterModule.java:629) - Test Passed : Error message displayed for empty complaint details field
+2024-06-21T14:23:39,394 [main] INFO  (Test_CallCenterModule.java:690) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-21T14:23:48,020 [main] INFO  (Test_CallCenterModule.java:710) - Test Passed : Error message displayed when date of letter not selected
+2024-06-21T14:23:49,093 [main] INFO  (Test_CallCenterModule.java:729) - Test Passed : Error message displayed for invalid date format
+2024-06-21T14:23:50,710 [main] INFO  (Test_CallCenterModule.java:749) - Test Passed : Error message displayed when date of receipt of complaint not selected
+2024-06-21T14:23:51,770 [main] INFO  (Test_CallCenterModule.java:768) - Test Passed : Error message displayed for date of receipt of complaint with invalid date format
+2024-06-21T14:23:54,254 [main] INFO  (Test_CallCenterModule.java:790) - Test Passed : Call center user is not able to upload other file formats
+2024-06-21T14:23:56,660 [main] INFO  (Test_CallCenterModule.java:812) - Test Passed : Call center user is not able to upload more than 10mb size file
+2024-06-21T14:24:00,242 [main] INFO  (Test_CallCenterModule.java:833) - Test Passed : Error message displayed for special characters entered in priority handling details field
+2024-06-21T14:24:00,978 [main] INFO  (Test_CallCenterModule.java:873) - Test Passed : Error message displayed for special characters entered in remarks field

@@ -1,0 +1,65 @@
+2024-06-26T16:56:45,637 [main] INFO  (Test_CallCenterModule.java:50) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-26T16:56:51,713 [main] ERROR (Test_CallCenterModule.java:79) - Test Failed : User is not able to open Registration Against Entity By IRDAI Page
+2024-06-26T16:56:51,792 [main] INFO  (Test_CallCenterModule.java:94) - Test Passed : Identify By drop down is visible on the web page
+2024-06-26T16:56:51,823 [main] INFO  (Test_CallCenterModule.java:104) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-26T16:56:51,855 [main] INFO  (Test_CallCenterModule.java:114) - Test Passed : Search button present on the web page
+2024-06-26T16:56:51,918 [main] INFO  (Test_CallCenterModule.java:124) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-26T16:56:52,280 [main] INFO  (Test_CallCenterModule.java:134) - Test Passe : All fields related to complaint classification is visible on registration page
+2024-06-26T16:56:52,422 [main] INFO  (Test_CallCenterModule.java:144) - Test Passe : Policy/Proposal Number/Certificate Number/Claim Number radio buttons are displayed
+2024-06-26T16:56:52,484 [main] INFO  (Test_CallCenterModule.java:154) - Test Passed : Policy number field is visible and enabled
+2024-06-26T16:56:52,547 [main] INFO  (Test_CallCenterModule.java:164) - Test Passed : Complaint details field is visible and enabled
+2024-06-26T16:56:52,714 [main] ERROR (Test_CallCenterModule.java:178) - Test Failed : Register button either not displayed or enabled
+2024-06-26T16:57:00,132 [main] ERROR (Test_CallCenterModule.java:201) - Test Failed : Back button functionality not working by dismissing alert pop up!
+2024-06-26T16:57:36,275 [main] ERROR (MainClass.java:118) - org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb2bdd963e5fea870f2a093048a1879d, clickElement {id=f.3991ED0C9F3456EF982D3B6EB4F99C02.d.B50E766EA33887D7E617763AB1686446.e.237}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56593/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (eb2bdd963e5fea870f2a093048a1879d)] -> xpath: //button[@id='btncancel']]
+Session ID: eb2bdd963e5fea870f2a093048a1879d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at ObjectRepository.CallcenterRegPage.clickOnBack(CallcenterRegPage.java:852)
+	at CallCenterModule.Test_CallCenterModule.test_accept_back_button_functionality(Test_CallCenterModule.java:212)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+

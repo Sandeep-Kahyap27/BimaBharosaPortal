@@ -1,0 +1,20 @@
+2024-05-30T11:09:48,746 [main] ERROR (Test_TrackingComplaint.java:27) - Mobile number field accepting alphabet and special characters
+2024-05-30T11:09:50,913 [main] INFO  (Test_TrackingComplaint.java:51) - With unregistered mobile number not able to track complaint
+2024-05-30T11:09:56,748 [main] INFO  (Test_TrackingComplaint.java:67) - With registered mobile number able to track complaint
+2024-05-30T11:09:56,831 [main] INFO  (Test_TrackingComplaint.java:84) - After entering one digit of OTP next digit OTP field is appearing
+2024-05-30T11:10:30,148 [main] INFO  (Test_TrackingComplaint.java:105) - After entering invalid OTP next page is not appearing
+2024-05-30T11:11:30,206 [main] INFO  (Test_TrackingComplaint.java:118) - After waiting for 60 seconds resend button is visible
+2024-05-30T11:12:36,330 [main] INFO  (Test_TrackingComplaint.java:136) - After clicking resend bttton and waiting for 60 seconds resend button again visible
+2024-05-30T11:13:14,707 [main] INFO  (Test_TrackingComplaint.java:158) - After entering special character as OTP next page is not appearing
+2024-05-30T11:13:17,992 [main] INFO  (Test_TrackingComplaint.java:172) - after entering OTP arrow field is visible
+2024-05-30T11:13:20,065 [main] INFO  (Test_TrackingComplaint.java:189) - After entering valid OTP next page is appearing
+2024-05-30T11:13:21,120 [main] INFO  (Test_TrackingComplaint.java:204) - Export button is visible
+2024-05-30T11:13:21,150 [main] INFO  (Test_TrackingComplaint.java:219) - all the fields visible on table.
+2024-05-30T11:13:27,325 [main] INFO  (Test_TrackingComplaint.java:237) - After clicking on menu button,  complaints dropdown visible
+2024-05-30T11:14:08,708 [main] INFO  (Test_TrackingComplaint.java:275) - Complaint Registered Against Insurance company Successfully.
+2024-05-30T11:14:09,063 [main] INFO  (Test_TrackingComplaint.java:305) - user able to handle show entries dropdown
+2024-05-30T11:14:20,928 [main] INFO  (Test_TrackingComplaint.java:323) - View edit page is visible to user
+2024-05-30T11:14:24,015 [main] INFO  (Test_TrackingComplaint.java:341) - Uploaded document on Check Uploaded Attachment is visible
+2024-05-30T11:14:30,276 [main] INFO  (Test_TrackingComplaint.java:364) - With special characters complaint description not updating
+2024-05-30T11:14:38,096 [main] INFO  (Test_TrackingComplaint.java:383) - user can edit information on Complaint Details field and update the same.
+2024-05-30T11:14:48,941 [main] INFO  (Test_TrackingComplaint.java:401) - After click on back button on PHViewEditComplaint page user able to back on previous page

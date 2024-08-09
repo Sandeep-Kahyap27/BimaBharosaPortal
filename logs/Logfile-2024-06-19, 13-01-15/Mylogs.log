@@ -1,0 +1,4 @@
+2024-06-19T13:01:42,538 [main] INFO  (Test_CallCenterModule.java:45) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-19T13:01:47,382 [main] INFO  (Test_CallCenterModule.java:70) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-19T13:01:52,775 [main] INFO  (Test_CallCenterModule.java:290) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-19T13:01:57,027 [main] INFO  (Test_CallCenterModule.java:354) - Test Passed : Existing user details displayed correctly with valid email ID

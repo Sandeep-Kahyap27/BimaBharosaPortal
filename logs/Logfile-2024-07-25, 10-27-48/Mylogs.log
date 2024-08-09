@@ -1,0 +1,4 @@
+2024-07-25T10:34:06,092 [main] INFO  (Test_UploadComplaintsPage.java:80) - Test Passed : Upload excel file field displayed on the page
+2024-07-25T10:34:06,213 [main] INFO  (Test_UploadComplaintsPage.java:90) - Test Passed : Upload button enabled and visible
+2024-07-25T10:34:06,301 [main] INFO  (Test_UploadComplaintsPage.java:100) - Test Passed : Clear button enabled and visible
+2024-07-25T10:34:06,384 [main] INFO  (Test_UploadComplaintsPage.java:110) - Test Passed : DownloadTemplate button visible and enabled

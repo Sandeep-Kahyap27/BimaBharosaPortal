@@ -1,9 +1,6 @@
 package ObjectRepository;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -124,6 +121,48 @@ public class CallcenterViewEditPage {
     @FindBy(xpath = "//*[text()='View Complaints']")
     @CacheLookup
     private WebElement viewEdit;
+
+
+    //Added by abhishek
+    @FindBy(id = "txtPolicyProposalCertifiateClaimNumber")
+    @CacheLookup
+    private WebElement policyNumber_disable;
+
+    @FindBy(id = "txtcompldetails")
+    @CacheLookup
+    private WebElement complaint_details_disable;
+
+    @FindBy(xpath = "//div[@id='ddlComplaintDescType_chosen']//span")
+    @CacheLookup
+    private WebElement complaint_desc_type_disable;
+
+    @FindBy(id = "txtremarkbyescalation")
+    @CacheLookup
+    private WebElement exclationfield;
+
+    @FindBy(id = "btnescalate")
+    @CacheLookup
+    private WebElement exclationButton;
+
+    @FindBy(xpath = "//table[@id='VieweditDataTables']/tbody/tr[1]/td[11]")
+    @CacheLookup
+    private WebElement complaint_status;
+
+    @FindBy(xpath = "//small[@id='txtremarkbyescalation-error']")
+    @CacheLookup
+    private WebElement errExclation;
+
+    @FindBy(xpath = "//button[@id='Logout']")
+    @CacheLookup
+    private WebElement logoutBtn;
+
+    @FindBy(xpath = "//button[@id='btnConfirmSuccess']")
+    @CacheLookup
+    private WebElement logOffSuccess;
+
+    @FindBy(id = "btnConfirmCancel")
+    @CacheLookup
+    private static WebElement logOffCancel;
 
 
     public CallcenterViewEditPage(WebDriver driver) {
@@ -269,6 +308,23 @@ public class CallcenterViewEditPage {
         ok.click();
     }
 
+
+    public void logOutSuccess() throws InterruptedException {
+        try {
+            logoutBtn.click();
+            Thread.sleep(1000);
+            logOffSuccess.click();
+        } catch (NoSuchElementException n) {
+
+        } catch (StaleElementReferenceException s) {
+            menuButton.click();
+            logoutBtn.click();
+            Thread.sleep(1000);
+            logOffSuccess.click();
+        }
+
+    }
+
     public String getTextShowingEntityZero() {
         showingEntity.getText();
         return showingEntity.getText();
@@ -330,4 +386,63 @@ public class CallcenterViewEditPage {
 
     }
 
+
+    //Methods added by abhishek
+    public String getPolicyNumber() {
+        try {
+            if (policyNumber_disable.isDisplayed()) {
+                return policyNumber_disable.getAttribute("value");
+            }
+        } catch (NoSuchElementException e) {
+
+        }
+        return null;
+    }
+
+    public String getComplaintDetails() {
+        try {
+            if (complaint_details_disable.isDisplayed()) {
+                return complaint_details_disable.getAttribute("value");
+            }
+        } catch (NoSuchElementException e) {
+
+        }
+        return null;
+    }
+
+
+    public String getComplaintDescType() {
+        try {
+            if (complaint_desc_type_disable.isDisplayed()) {
+                return complaint_desc_type_disable.getText();
+            }
+        } catch (NoSuchElementException e) {
+
+        }
+        return null;
+    }
+
+    public void enterExclation(String exclation) {
+        exclationfield.sendKeys(exclation);
+    }
+
+    public void clkExclationBtn() {
+        exclationButton.click();
+    }
+
+    public String getTextErrExclation() {
+        return errExclation.getText();
+
+    }
+
+    public String verifyComplaintStatus(){
+        if(complaint_status.isDisplayed()){
+            return complaint_status.getText();
+        }
+        return null;
+    }
+
+    public void clrExclationField(){
+        exclationfield.clear();
+    }
 }

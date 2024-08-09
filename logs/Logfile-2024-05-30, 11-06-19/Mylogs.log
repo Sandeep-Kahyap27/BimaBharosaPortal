@@ -1,0 +1,22 @@
+2024-05-30T11:06:42,508 [main] INFO  (Test_ComplaintRegistrationModule.java:27) - Home Page URL is as expected
+2024-05-30T11:06:42,574 [main] INFO  (Test_ComplaintRegistrationModule.java:44) - Register Complaint button is visible
+2024-05-30T11:06:42,591 [main] INFO  (Test_ComplaintRegistrationModule.java:54) - Register Complaint button is clickable
+2024-05-30T11:06:46,194 [main] INFO  (Test_ComplaintRegistrationModule.java:78) - Registration page URL is correct
+2024-05-30T11:06:46,210 [main] INFO  (Test_ComplaintRegistrationModule.java:99) - Registration page title is correct
+2024-05-30T11:06:47,148 [main] INFO  (Test_ComplaintRegistrationModule.java:123) - Mobile field validation without entering any number passed!
+2024-05-30T11:06:50,346 [main] INFO  (Test_ComplaintRegistrationModule.java:148) - Mobile field validation with invalid any number passed!
+2024-05-30T11:06:53,528 [main] INFO  (Test_ComplaintRegistrationModule.java:175) - Mobile number length is valid.
+2024-05-30T11:06:59,984 [main] INFO  (Test_ComplaintRegistrationModule.java:209) - Mobile number entered successfully
+2024-05-30T11:07:05,477 [main] INFO  (Test_ComplaintRegistrationModule.java:233) - Initial_Display, Validate button is displayed
+2024-05-30T11:07:08,582 [main] INFO  (Test_ComplaintRegistrationModule.java:254) - Error message displayed for empty OTP
+2024-05-30T11:07:21,116 [main] INFO  (Test_ComplaintRegistrationModule.java:277) - Alphabetic characters is not considered as OTP
+2024-05-30T11:07:33,647 [main] INFO  (Test_ComplaintRegistrationModule.java:301) - Special characters are not considered as OTP
+2024-05-30T11:07:46,230 [main] INFO  (Test_ComplaintRegistrationModule.java:324) - Invalid OTP not considered
+2024-05-30T11:08:03,000 [main] INFO  (Test_ComplaintRegistrationModule.java:346) - Resend OTP button is visible after 60s
+2024-05-30T11:08:06,101 [main] INFO  (Test_ComplaintRegistrationModule.java:367) - Resend OTP button is enabled
+2024-05-30T11:08:12,463 [main] INFO  (Test_ComplaintRegistrationModule.java:388) - Valid OTP validation successful!
+2024-05-30T11:08:21,645 [main] INFO  (Test_ComplaintRegistrationModule.java:416) - Error message displayed for empty pin code field.
+2024-05-30T11:08:21,797 [main] INFO  (Test_ComplaintRegistrationModule.java:442) - Error message displayed for invalid PIN code.
+2024-05-30T11:08:22,951 [main] INFO  (Test_ComplaintRegistrationModule.java:465) - Pin code length is correct
+2024-05-30T11:08:24,145 [main] INFO  (Test_ComplaintRegistrationModule.java:485) - District populated based on valid pinCode
+2024-05-30T11:08:24,178 [main] INFO  (Test_ComplaintRegistrationModule.java:494) - State populated based on valid pinCode

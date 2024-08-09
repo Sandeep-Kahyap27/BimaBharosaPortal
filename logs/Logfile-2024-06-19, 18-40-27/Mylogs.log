@@ -1,0 +1,6 @@
+2024-06-19T18:40:54,365 [main] INFO  (Test_CallCenterModule.java:46) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-19T18:40:59,622 [main] INFO  (Test_CallCenterModule.java:71) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-19T18:41:00,860 [main] INFO  (Test_CallCenterModule.java:160) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-19T18:41:05,071 [main] INFO  (Test_CallCenterModule.java:267) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-19T18:41:05,165 [main] INFO  (Test_CallCenterModule.java:428) - Test Passed : Call center user is able to interact with complaint against dropdown
+2024-06-19T18:41:09,413 [main] INFO  (Test_CallCenterModule.java:520) - Test Passed : Required fields are visible for complaint against insurance intermediary

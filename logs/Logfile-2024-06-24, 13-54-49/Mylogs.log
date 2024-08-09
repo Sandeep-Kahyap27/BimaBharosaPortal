@@ -1,0 +1,4 @@
+2024-06-24T13:55:46,694 [main] ERROR (Test_CallCenterModule.java:54) - Test Failed : Menu button is either not visible or clickable
+2024-06-24T13:55:54,280 [main] INFO  (Test_CallCenterModule.java:75) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-24T13:56:01,847 [main] INFO  (Test_CallCenterModule.java:924) - Test Passed : Back button functionality is working by dismissing alert pop up
+2024-06-24T13:56:09,214 [main] ERROR (Test_CallCenterModule.java:952) - Test Failed : Back button functionality not working by accepting alert pop up!

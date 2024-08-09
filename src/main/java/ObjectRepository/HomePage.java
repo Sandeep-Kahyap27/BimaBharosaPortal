@@ -48,31 +48,21 @@ public class HomePage {
     private WebElement O6;
 
 
-    public boolean getOTPsubmitbtn() throws InterruptedException {
-
-        try {
-            Thread.sleep(3000);
-            return OTPSubmitbtn.isDisplayed();
-        } catch (NoSuchElementException e) {
-            e.printStackTrace();
-        }
-
-        return false;
-    }
-
-    public void otp_sendkeys() {
-        O1.sendKeys("1");
-
-    }
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    /*Action Methods*/
     public void OkPopup() {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();", okButton);
+    }
+
+    public void otp_sendkeys() {
+        O1.sendKeys("1");
+
     }
 
     public void registration() {
@@ -96,27 +86,12 @@ public class HomePage {
         jse2.executeScript("arguments[0].value = arguments[1];", mobileNumber, mobNumber);
     }
 
-    public String get_spl_char_mob() {
-
-        return mobileNumber.getAttribute("value");
-    }
 
     public void clearField_mob() {
 
         mobileNumber.clear();
     }
 
-    public boolean otp_pass_chk() {
-        try {
-
-            JavascriptExecutor jse = (JavascriptExecutor) driver;
-            jse.executeScript("arguments[0].click();", O2);
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-        return true;
-    }
 
     public void enterOTP_manually_invalid() throws InterruptedException {
         O1.sendKeys("1");
@@ -149,15 +124,6 @@ public class HomePage {
 
     }
 
-
-    public boolean OTP_submit_arrow_visible() {
-        try {
-            return OTPSubmitbtn.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-    }
 
     public void trackComplaint() throws InterruptedException {
         Thread.sleep(1000);
@@ -243,7 +209,7 @@ public class HomePage {
     }
 
 
-    //Getter methods
+    /*Getter methods*/
     public boolean getBimaBharosaPortalLogo() {
 
         boolean status = false;
@@ -283,6 +249,44 @@ public class HomePage {
         }
 
         return enable;
+    }
+
+    public boolean OTP_submit_arrow_visible() {
+        try {
+            return OTPSubmitbtn.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+    }
+
+    public boolean otp_pass_chk() {
+        try {
+
+            JavascriptExecutor jse = (JavascriptExecutor) driver;
+            jse.executeScript("arguments[0].click();", O2);
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+        return true;
+    }
+
+    public String get_spl_char_mob() {
+
+        return mobileNumber.getAttribute("value");
+    }
+
+    public boolean getOTPsubmitbtn() throws InterruptedException {
+
+        try {
+            Thread.sleep(3000);
+            return OTPSubmitbtn.isDisplayed();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
 }

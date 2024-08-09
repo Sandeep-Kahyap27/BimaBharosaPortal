@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaSuite">
+    <listeners>
+        <listener class-name="Utilities.Screenshot"/>
+        <listener class-name="Utilities.TestNGExcelReport"/>
+    </listeners>
+    <test name="CallCenterModule">
+        <classes>
+            <class name="CallCenterModule.Test_CallCenterModule"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_Against_Broker"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_Against_Insurance_Company"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_ByEmailId"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_ByMobileNumber"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_DefaultTATDays"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_DuplicateComplaint"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_NewPolicyHolder"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_UnregEntity_WithInsCompany"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_UnregEntity_WithoutInsCompany"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_VIP_PolicyHolder"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_With_FileAttachment"></class>
+            <class name="CallCenterModule.Test_CallCenterViewEdit"></class>
+            <class name="CallCenterModule.Test_CallCenterDoesNotPertain"></class>
+            <class name="CallCenterModule.Test_CallCenterEscalateComplaint"></class>
+        </classes>
+    </test>
+</suite>

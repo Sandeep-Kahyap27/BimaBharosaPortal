@@ -18,7 +18,7 @@ public class Test_PolicyHolderComplaint_Positive extends MainClass {
 
         loadURL("Url");
 
-        test = extent.createTest("Verify user is able to register and track complaint");
+        test = extent.createTest("Positive: Verify user is able to register and track complaint");
         //Random rand = new Random();
 
         //Register complaint against insurance company
@@ -58,23 +58,23 @@ public class Test_PolicyHolderComplaint_Positive extends MainClass {
         if(reg.registerComplaint()){
             if(Msg.equals("Complaint Registered Successfully.")){
                 test.log(Status.PASS,"Complaint Registered Against Insurance company Successfully.");
-                logger.info("Complaint Registered Against Insurance company Successfully.");
+                logger.info("Test Passed : Complaint Registered Against Insurance company Successfully.");
             }
             else{
                 test.log(Status.FAIL, "Complaint not registered");
                 test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-                logger.error("Complaint not registered");
+                logger.error("Test Failed : Complaint not registered");
             }
         }
         else{
             if(Msg.equals("Complaint has been already registered with same policy number and same complaint description")){
                 test.log(Status.PASS, "Complaint not registering with duplicate policy number and complaint description");
-                logger.info("Complaint not registering with duplicate policy number and complaint description");
+                logger.info("Test Passed : Complaint not registering with duplicate policy number and complaint description");
             }
             else{
                 test.log(Status.FAIL, "Duplicate complaint registered");
                 test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-                logger.error("Duplicate complaint registered");
+                logger.error("Test Failed : Duplicate complaint registered");
             }
 
         }

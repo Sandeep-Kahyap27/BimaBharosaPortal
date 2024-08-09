@@ -1,0 +1,9 @@
+2024-05-07T18:05:53,833 [main] INFO  (Test_URLCaseSensitive_Negative.java:27) - Test Passed : URL is redirecting to the correct page
+2024-05-07T18:06:24,874 [main] INFO  (Test_ComplaintRegistrationModule.java:27) - Home Page URL is as expected
+2024-05-07T18:06:24,906 [main] INFO  (Test_ComplaintRegistrationModule.java:44) - Register Complaint button is visible
+2024-05-07T18:06:24,943 [main] INFO  (Test_ComplaintRegistrationModule.java:54) - Register Complaint button is clickable
+2024-05-07T18:06:32,527 [main] INFO  (Test_ComplaintRegistrationModule.java:78) - Registration page URL is correct
+2024-05-07T18:06:32,542 [main] INFO  (Test_ComplaintRegistrationModule.java:99) - Registration page title is correct
+2024-05-07T18:06:33,060 [main] INFO  (Test_ComplaintRegistrationModule.java:123) - Mobile field validation without entering any number passed!
+2024-05-07T18:06:36,242 [main] INFO  (Test_ComplaintRegistrationModule.java:148) - Mobile field validation with invalid any number passed!
+2024-05-07T18:06:39,424 [main] INFO  (Test_ComplaintRegistrationModule.java:175) - Mobile number length is valid.

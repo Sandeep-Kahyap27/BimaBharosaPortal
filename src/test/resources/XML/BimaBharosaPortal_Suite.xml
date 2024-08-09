@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaSuite">
+    <listeners>
+        <listener class-name="Utilities.Screenshot"/>
+        <listener class-name="Utilities.TestNGExcelReport"/>
+    </listeners>
+    <test name="LoginModule">
+        <classes>
+            <class name="LoginModule.Test_Login"></class>
+        </classes>
+    </test>
+    <test name="ComplaintRegistrationModule">
+        <classes>
+            <class name="ComplaintRegistrationModule.Test_URLCaseSensitive_Negative"></class>
+            <class name="ComplaintRegistrationModule.Test_ComplaintRegistrationModule"></class>
+            <class name="ComplaintRegistrationModule.Test_ComplaintRegistration_InsCompany"></class>
+            <class name="ComplaintRegistrationModule.Test_ComplaintRegistration_UnregEntity"></class>
+            <class name="ComplaintRegistrationModule.Test_ComplaintRegistration_UnregEntity_WithoutInsCompany"></class>
+            <class name="ComplaintRegistrationModule.Test_ComplaintRegistration_InsIntermediary"></class>
+            <class name="ComplaintRegistrationModule.Test_ComplaintRegistration_InsIntermediary"></class>
+        </classes>
+    </test>
+    <test name="TrackingModule">
+        <classes>
+            <class name="TrackingComplaintModule.Test_TrackingComplaint"></class>
+            <class name="TrackingComplaintModule.Test_PolicyHolderComplaint_Positive"></class>
+        </classes>
+    </test>
+    <test name="CallCenterModule">
+        <classes>
+            <class name="CallCenterModule.Test_CallCenterModule"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_Against_Broker"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_Against_Insurance_Company"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_ByEmailId"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_ByMobileNumber"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_DefaultTATDays"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_DuplicateComplaint"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_NewPolicyHolder"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_UnregEntity_WithInsCompany"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_UnregEntity_WithoutInsCompany"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_VIP_PolicyHolder"></class>
+            <class name="CallCenterModule.Test_CallCenterRegistration_With_FileAttachment"></class>
+        </classes>
+    </test>
+</suite>

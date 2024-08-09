@@ -1,0 +1,153 @@
+2024-06-25T11:14:19,899 [main] INFO  (Test_CallCenterModule.java:50) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-25T11:14:25,178 [main] INFO  (Test_CallCenterModule.java:75) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-25T11:14:25,233 [main] INFO  (Test_CallCenterModule.java:94) - Test Passed : Identify By drop down is visible on the web page
+2024-06-25T11:14:25,266 [main] INFO  (Test_CallCenterModule.java:104) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-25T11:14:25,282 [main] INFO  (Test_CallCenterModule.java:114) - Test Passed : Search button present on the web page
+2024-06-25T11:14:25,309 [main] INFO  (Test_CallCenterModule.java:124) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-25T11:14:29,563 [main] INFO  (Test_CallCenterModule.java:144) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-25T11:14:30,799 [main] INFO  (Test_CallCenterModule.java:164) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-25T11:14:30,830 [main] INFO  (Test_CallCenterModule.java:182) - Test Passed : Search button is enabled
+2024-06-25T11:14:37,099 [main] INFO  (Test_CallCenterModule.java:203) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-25T11:14:39,293 [main] INFO  (Test_CallCenterModule.java:225) - Test Passed : Error message displayed for empty mobile number
+2024-06-25T11:14:43,510 [main] INFO  (Test_CallCenterModule.java:249) - Test Passed : Error message displayed for less than 10 digit mobile number
+2024-06-25T11:14:47,730 [main] INFO  (Test_CallCenterModule.java:271) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-25T11:14:53,124 [main] INFO  (Test_CallCenterModule.java:295) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-25T11:14:56,303 [main] INFO  (Test_CallCenterModule.java:317) - Test Passed : Warning pop up displayed when searching with empty emailID field
+2024-06-25T11:15:01,572 [main] INFO  (Test_CallCenterModule.java:338) - Test Passed : Warning popUp displayed for invalid email Id
+2024-06-25T11:15:05,789 [main] INFO  (Test_CallCenterModule.java:359) - Test Passed : Existing user details displayed correctly with valid email ID
+2024-06-25T11:15:05,908 [main] INFO  (Test_CallCenterModule.java:376) - Test Passed : Pin code field is visible
+2024-06-25T11:15:09,724 [main] INFO  (Test_CallCenterModule.java:396) - Test Passed : District and state not populated for invalid pinCode
+2024-06-25T11:15:12,926 [main] INFO  (Test_CallCenterModule.java:416) - Test Passed : District and state auto populated for valid pinCode
+2024-06-25T11:15:13,009 [main] INFO  (Test_CallCenterModule.java:432) - Test Passed : Call center user is able to interact with complaint against dropdown
+2024-06-25T11:15:15,239 [main] INFO  (Test_CallCenterModule.java:449) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-25T11:15:17,415 [main] INFO  (Test_CallCenterModule.java:468) - Test Passed : Expected error message displayed for select option in complaint against dropdown
+2024-06-25T11:15:24,784 [main] INFO  (Test_CallCenterModule.java:488) - Test Passed : Only Required fields are visible for complaint against unregistered entity without involvement of insurance company
+2024-06-25T11:15:31,118 [main] INFO  (Test_CallCenterModule.java:509) - Test Passed : Required fields are visible for complaint against unregistered entity with involvement of insurance company
+2024-06-25T11:15:35,335 [main] INFO  (Test_CallCenterModule.java:528) - Test Passed : Required fields are visible for complaint against insurance intermediary
+2024-06-25T11:15:37,529 [main] INFO  (Test_CallCenterModule.java:547) - Test Passed : Broker dropdown list and it's license number field is visible
+2024-06-25T11:15:40,289 [main] INFO  (Test_CallCenterModule.java:557) - Test Passed : Broker license number populated correctly
+2024-06-25T11:15:40,361 [main] INFO  (Test_CallCenterModule.java:576) - Test Passed : All identifier type radio buttons are enabled
+2024-06-25T11:15:40,515 [main] INFO  (Test_CallCenterModule.java:596) - Test Passed : Error message displayed for empty policy/proposal/certificate/claim number field
+2024-06-25T11:15:52,235 [main] INFO  (Test_CallCenterModule.java:616) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-25T11:15:56,551 [main] INFO  (Test_CallCenterModule.java:640) - Test Passed : Error message displayed for empty complaint details field
+2024-06-25T11:15:57,767 [main] INFO  (Test_CallCenterModule.java:660) - Test Passed : Error message displayed for special characters entered in complaint details field
+2024-06-25T11:16:18,401 [main] INFO  (Test_CallCenterModule.java:680) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-25T11:16:19,738 [main] INFO  (Test_CallCenterModule.java:700) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-25T11:16:28,039 [main] INFO  (Test_CallCenterModule.java:720) - Test Passed : Error message displayed when date of letter not selected
+2024-06-25T11:16:28,613 [main] INFO  (Test_CallCenterModule.java:739) - Test Passed : Error message displayed for invalid date format
+2024-06-25T11:16:29,890 [main] INFO  (Test_CallCenterModule.java:759) - Test Passed : Error message displayed when date of receipt of complaint not selected
+2024-06-25T11:16:30,357 [main] INFO  (Test_CallCenterModule.java:778) - Test Passed : Error message displayed for date of receipt of complaint with invalid date format
+2024-06-25T11:16:33,647 [main] INFO  (Test_CallCenterModule.java:801) - Test Passed : Call center user is not able to upload other file formats
+2024-06-25T11:16:35,864 [main] INFO  (Test_CallCenterModule.java:823) - Test Passed : Call center user is not able to upload more than 10mb size file
+2024-06-25T11:16:38,242 [main] INFO  (Test_CallCenterModule.java:844) - Test Passed : Error message displayed for special characters entered in priority handling details field
+2024-06-25T11:16:57,949 [main] INFO  (Test_CallCenterModule.java:862) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-25T11:16:58,345 [main] INFO  (Test_CallCenterModule.java:882) - Test Passed : Error message displayed for special characters entered in remarks field
+2024-06-25T11:17:17,907 [main] INFO  (Test_CallCenterModule.java:901) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-25T11:17:25,339 [main] INFO  (Test_CallCenterModule.java:925) - Test Passed : Back button functionality is working by dismissing alert pop up
+2024-06-25T11:17:26,677 [main] ERROR (Test_CallCenterModule.java:952) - Test Failed : Back button functionality not working by accepting alert pop up!
+2024-06-25T11:17:34,281 [main] ERROR (MainClass.java:118) - org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="Logout" class="btn btn-secondary quit">...</button> is not clickable at point (1237, 67). Other element would receive the click: <div class="modal show" id="confirmationDialog" style="display: block; padding-right: 8px;">...</div>
+  (Session info: chrome=126.0.6478.115)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7131ab97e6cd39e6e9dcd0bfd600d211, clickElement {id=f.DE598F16216934467FCBEFEAEDC51B6C.d.628D353BA2F85B4052446D25BAB34CAA.e.686}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.115, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49963/devtoo..., se:cdpVersion: 126.0.6478.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7131ab97e6cd39e6e9dcd0bfd600d211)] -> xpath: //button[@id='Logout']]
+Session ID: 7131ab97e6cd39e6e9dcd0bfd600d211
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at ObjectRepository.CallcenterRegPage.logOutCancel(CallcenterRegPage.java:874)
+	at CallCenterModule.Test_CallCenterModule.test_verify_logoff_unsuccess(Test_CallCenterModule.java:963)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2024-06-25T11:17:35,468 [main] ERROR (MainClass.java:118) - org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="Logout" class="btn btn-secondary quit">...</button> is not clickable at point (1237, 67). Other element would receive the click: <div class="modal show" id="confirmationDialog" style="display: block; padding-right: 8px;">...</div>
+  (Session info: chrome=126.0.6478.115)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7131ab97e6cd39e6e9dcd0bfd600d211, clickElement {id=f.DE598F16216934467FCBEFEAEDC51B6C.d.628D353BA2F85B4052446D25BAB34CAA.e.686}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.115, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49963/devtoo..., se:cdpVersion: 126.0.6478.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7131ab97e6cd39e6e9dcd0bfd600d211)] -> xpath: //button[@id='Logout']]
+Session ID: 7131ab97e6cd39e6e9dcd0bfd600d211
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at ObjectRepository.CallcenterRegPage.logOutSuccess(CallcenterRegPage.java:863)
+	at CallCenterModule.Test_CallCenterModule.test_verify_logoff_successfully(Test_CallCenterModule.java:983)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+

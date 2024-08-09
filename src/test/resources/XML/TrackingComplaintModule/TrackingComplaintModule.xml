@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaSuite">
+    <listeners>
+        <listener class-name="Utilities.Screenshot"/>
+        <listener class-name="Utilities.TestNGExcelReport"/>
+    </listeners>
+    <test name="TrackingModule">
+        <classes>
+            <class name="TrackingComplaintModule.Test_TrackingComplaint"></class>
+            <class name="TrackingComplaintModule.Test_PolicyHolderComplaint_Positive"></class>
+        </classes>
+    </test>
+</suite>

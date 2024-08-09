@@ -1,0 +1,66 @@
+2024-06-21T14:20:26,588 [main] INFO  (Test_CallCenterModule.java:47) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-21T14:20:31,878 [main] INFO  (Test_CallCenterModule.java:72) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-21T14:20:34,034 [main] INFO  (Test_CallCenterModule.java:161) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-21T14:20:38,382 [main] INFO  (Test_CallCenterModule.java:268) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-21T14:20:38,658 [main] INFO  (Test_CallCenterModule.java:373) - Test Passed : Pin code field is visible
+2024-06-21T14:20:42,274 [main] INFO  (Test_CallCenterModule.java:413) - Test Passed : District and state auto populated for valid pinCode
+2024-06-21T14:20:44,857 [main] INFO  (Test_CallCenterModule.java:446) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-21T14:20:49,691 [main] INFO  (Test_CallCenterModule.java:629) - Test Passed : Error message displayed for empty complaint details field
+2024-06-21T14:20:51,237 [main] INFO  (Test_CallCenterModule.java:690) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-21T14:20:59,827 [main] INFO  (Test_CallCenterModule.java:710) - Test Passed : Error message displayed when date of letter not selected
+2024-06-21T14:21:00,887 [main] INFO  (Test_CallCenterModule.java:729) - Test Passed : Error message displayed for invalid date format
+2024-06-21T14:21:02,471 [main] INFO  (Test_CallCenterModule.java:749) - Test Passed : Error message displayed when date of receipt of complaint not selected
+2024-06-21T14:21:03,440 [main] INFO  (Test_CallCenterModule.java:768) - Test Passed : Error message displayed for date of receipt of complaint with invalid date format
+2024-06-21T14:21:05,949 [main] INFO  (Test_CallCenterModule.java:790) - Test Passed : Call center user is not able to upload other file formats
+2024-06-21T14:21:08,382 [main] INFO  (Test_CallCenterModule.java:812) - Test Passed : Call center user is not able to upload more than 10mb size file
+2024-06-21T14:21:11,457 [main] INFO  (Test_CallCenterModule.java:833) - Test Passed : Error message displayed for special characters entered in priority handling details field
+2024-06-21T14:21:23,259 [main] INFO  (Test_CallCenterModule.java:853) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-21T14:21:23,320 [main] ERROR (MainClass.java:118) - org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You have reached your maximum limit of characters allowed}
+  (Session info: chrome=126.0.6478.115): You have reached your maximum limit of characters allowed
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1550cbde8b3325b310e0b930ae8b561c, findElement {using=id, value=txtpriohandldetails}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.115, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51368/devtoo..., se:cdpVersion: 126.0.6478.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1550cbde8b3325b310e0b930ae8b561c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getAttribute(Unknown Source)
+	at ObjectRepository.CallcenterRegPage.enterPriorityHandlingDetails(CallcenterRegPage.java:804)
+	at CallCenterModule.Test_CallCenterModule.test_special_characters_remarks_field(Test_CallCenterModule.java:867)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+

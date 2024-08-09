@@ -1,0 +1,2 @@
+2024-05-07T16:19:22,933 [main] INFO  (Test_ComplaintRegistration_InsCompany.java:73) - Complaint not registering with duplicate policy number and complaint description
+2024-05-07T16:20:40,202 [main] INFO  (Test_ComplaintRegistration_InsCompany.java:73) - Complaint not registering with duplicate policy number and complaint description

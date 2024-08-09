@@ -1,0 +1,3 @@
+2024-06-06T12:12:24,923 [main] ERROR (Test_CallCenterModule.java:84) - Test Failed : Is Complaint Registered radio buttons are not clickable
+2024-06-06T12:12:39,878 [main] INFO  (Test_CallCenterModule.java:41) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-06T12:12:47,750 [main] INFO  (Test_CallCenterModule.java:65) - Test Passed : User is able to open Registration Against Entity By IRDAI Page

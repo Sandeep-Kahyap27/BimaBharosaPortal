@@ -1,0 +1,43 @@
+2024-05-03T13:15:46,656 [main] INFO  (Test_URLCaseSensitive_Negative.java:27) - Test Passed : URL is redirecting to the correct page
+2024-05-03T13:16:19,089 [main] INFO  (Test_ComplaintRegistrationModule.java:27) - Home Page URL is as expected
+2024-05-03T13:16:19,149 [main] INFO  (Test_ComplaintRegistrationModule.java:44) - Register Complaint button is visible
+2024-05-03T13:16:19,187 [main] INFO  (Test_ComplaintRegistrationModule.java:54) - Register Complaint button is clickable
+2024-05-03T13:16:23,526 [main] INFO  (Test_ComplaintRegistrationModule.java:78) - Registration page URL is correct
+2024-05-03T13:16:23,558 [main] INFO  (Test_ComplaintRegistrationModule.java:99) - Registration page title is correct
+2024-05-03T13:16:25,407 [main] INFO  (Test_ComplaintRegistrationModule.java:123) - Mobile field validation without entering any number passed!
+2024-05-03T13:16:28,723 [main] INFO  (Test_ComplaintRegistrationModule.java:148) - Mobile field validation with invalid any number passed!
+2024-05-03T13:16:32,053 [main] INFO  (Test_ComplaintRegistrationModule.java:175) - Mobile number length is valid.
+2024-05-03T13:16:38,480 [main] INFO  (Test_ComplaintRegistrationModule.java:209) - Mobile number entered successfully
+2024-05-03T13:16:46,093 [main] INFO  (Test_ComplaintRegistrationModule.java:233) - Initial_Display, Validate button is displayed
+2024-05-03T13:16:49,178 [main] INFO  (Test_ComplaintRegistrationModule.java:254) - Error message displayed for empty OTP
+2024-05-03T13:17:01,717 [main] INFO  (Test_ComplaintRegistrationModule.java:277) - Alphabetic characters is not considered as OTP
+2024-05-03T13:17:14,227 [main] INFO  (Test_ComplaintRegistrationModule.java:301) - Special characters are not considered as OTP
+2024-05-03T13:17:26,702 [main] INFO  (Test_ComplaintRegistrationModule.java:324) - Invalid OTP not considered
+2024-05-03T13:17:43,430 [main] INFO  (Test_ComplaintRegistrationModule.java:346) - Resend OTP button is visible after 60s
+2024-05-03T13:17:46,529 [main] INFO  (Test_ComplaintRegistrationModule.java:367) - Resend OTP button is enabled
+2024-05-03T13:17:52,875 [main] INFO  (Test_ComplaintRegistrationModule.java:388) - Valid OTP validation successful!
+2024-05-03T13:18:02,091 [main] INFO  (Test_ComplaintRegistrationModule.java:416) - Error message displayed for empty pin code field.
+2024-05-03T13:18:02,254 [main] INFO  (Test_ComplaintRegistrationModule.java:442) - Error message displayed for invalid PIN code.
+2024-05-03T13:18:03,409 [main] INFO  (Test_ComplaintRegistrationModule.java:465) - Pin code length is correct
+2024-05-03T13:18:04,559 [main] INFO  (Test_ComplaintRegistrationModule.java:485) - District populated based on valid pinCode
+2024-05-03T13:18:04,592 [main] INFO  (Test_ComplaintRegistrationModule.java:494) - State populated based on valid pinCode
+2024-05-03T13:19:23,728 [main] INFO  (Test_ComplaintRegistration_InsCompany.java:69) - Complaint not registering with duplicate policy number and complaint description
+2024-05-03T13:21:34,572 [main] INFO  (Test_ComplaintRegistration_UnregEntity.java:77) - Complaint not registering with duplicate policy number and complaint description
+2024-05-03T13:22:53,443 [main] INFO  (Test_ComplaintRegistration_UnregEntity_WithoutInsCompany.java:59) - Complaint Registered Against Unregistered Entity without Insurance Company Involvement.
+2024-05-03T13:24:20,741 [main] INFO  (Test_ComplaintRegistration_InsIntermediary.java:66) - Complaint not registering with duplicate policy number and complaint description
+2024-05-03T13:24:53,616 [main] ERROR (Test_TrackingComplaint.java:27) - Mobile number field accepting alphabet and special characters
+2024-05-03T13:24:55,787 [main] INFO  (Test_TrackingComplaint.java:51) - With unregistered mobile number not able to track complaint
+2024-05-03T13:25:00,977 [main] INFO  (Test_TrackingComplaint.java:67) - With registered mobile number able to track complaint
+2024-05-03T13:25:01,045 [main] INFO  (Test_TrackingComplaint.java:83) - After entering one digit of OTP next digit OTP field is appearing
+2024-05-03T13:25:34,318 [main] INFO  (Test_TrackingComplaint.java:104) - After entering invalid OTP next page is not appearing
+2024-05-03T13:26:34,384 [main] INFO  (Test_TrackingComplaint.java:117) - After waiting for 60 seconds resend button is visible
+2024-05-03T13:27:40,499 [main] INFO  (Test_TrackingComplaint.java:135) - After clicking resend bttton and waiting for 60 seconds resend button again visible
+2024-05-03T13:28:18,763 [main] INFO  (Test_TrackingComplaint.java:157) - After entering special character as OTP next page is not appearing
+2024-05-03T13:28:22,064 [main] INFO  (Test_TrackingComplaint.java:171) - after entering OTP arrow field is visible
+2024-05-03T13:28:23,340 [main] INFO  (Test_TrackingComplaint.java:188) - After entering valid OTP next page is appearing
+2024-05-03T13:28:23,983 [main] INFO  (Test_TrackingComplaint.java:203) - Export button is visible
+2024-05-03T13:28:24,004 [main] INFO  (Test_TrackingComplaint.java:218) - all the fields visible on table.
+2024-05-03T13:28:30,169 [main] INFO  (Test_TrackingComplaint.java:236) - After clicking on menu button,  complaints dropdown visible
+2024-05-03T13:29:14,797 [main] INFO  (Test_TrackingComplaint.java:283) - Complaint not registering with duplicate policy number and complaint description
+2024-05-03T13:30:21,368 [main] ERROR (Test_TrackingComplaint.java:308) - user not able to handle show entries dropdown
+2024-05-03T13:34:27,381 [main] INFO  (Test_PolicyHolderComplaint_Positive.java:69) - Complaint not registering with duplicate policy number and complaint description

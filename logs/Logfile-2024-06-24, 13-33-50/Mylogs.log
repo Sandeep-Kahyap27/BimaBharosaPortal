@@ -1,0 +1,4 @@
+2024-06-24T13:34:14,789 [main] INFO  (Test_CallCenterModule.java:50) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-24T13:34:20,018 [main] INFO  (Test_CallCenterModule.java:75) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-24T13:34:21,666 [main] INFO  (Test_CallCenterModule.java:699) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-24T13:35:10,867 [main] ERROR (Test_CallCenterModule.java:930) - Test Failed : Back button functionality not working by dismissing alert pop up!

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BimaBharosaSuite">
+    <listeners>
+        <listener class-name="Utilities.Screenshot"/>
+        <listener class-name="Utilities.TestNGExcelReport"/>
+    </listeners>
+    <test name="LoginModule">
+        <classes>
+           <class name="LoginModule.Test_Login"></class>
+        </classes>
+    </test>
+</suite>

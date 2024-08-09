@@ -1,0 +1,2 @@
+2024-05-30T11:03:24,704 [main] INFO  (Test_ComplaintRegistration_InsCompany.java:60) - Complaint Registered Against Insurance company Successfully.
+2024-05-30T11:04:12,910 [main] INFO  (Test_ComplaintRegistration_InsCompany.java:73) - Complaint not registering with duplicate policy number and complaint description

@@ -2,12 +2,13 @@ package LoginModule;
 
 import Base.LoginHelper;
 import Base.MainClass;
+import ObjectRepository.CallcenterRegPage;
 import ObjectRepository.LoginPage;
 import Utilities.Property;
 import Utilities.Screenshot;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,43 +26,43 @@ public class Test_Login extends MainClass {
 
     @Test(priority = 1)
     public void test_Visibility_Buttons_LoginPage() throws InterruptedException {
-        test = extent.createTest("Verify the buttons are visible and clickable");
-        LoginHelper.backtoSafty();
+        test = extent.createTest("Positive: Verify the buttons are visible and clickable");
+        LoginHelper.backToSafety();
         LoginPage lp = new LoginPage(driver);
 
 
         if (lp.displayLoginBtn() && lp.displayClearBtn()) {
             test.log(Status.PASS, "Test Pass : Login and Clear buttons are visible and clickable");
-            logger.info("Test Pass : Login and Clear buttons are visible and clickable");
+            logger.info("Test Passed : Login and Clear buttons are visible and clickable");
         } else {
 
             test.log(Status.FAIL, "Test Fail : Login and Clear buttons are not visible and clickable");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Login and Clear buttons are not visible and clickable");
+            logger.error("Test Failed : Login and Clear buttons are not visible and clickable");
         }
 
     }
 
     @Test(priority = 2)
     public void test_Visibility_Captcha() throws InterruptedException {
-        test = extent.createTest("Verify the Captcha is visible on login page");
+        test = extent.createTest("Positive: Verify the Captcha is visible on login page");
         LoginPage lp = new LoginPage(driver);
 
         if (lp.displayCaptcha()) {
             test.log(Status.PASS, "Test Pass : Captcha is visible on login page");
-            logger.info("Test Pass : Captcha is visible on login page");
+            logger.info("Test Passed : Captcha is visible on login page");
         } else {
 
             test.log(Status.FAIL, "Test Fail : Captcha is not visible on login page");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Captcha is not visible on login page");
+            logger.error("Test Failed : Captcha is not visible on login page");
 
         }
     }
 
     @Test(priority = 3)
     public void test_Refresh_Captcha() throws InterruptedException {
-        test = extent.createTest("Verify the refresh Captcha ");
+        test = extent.createTest("Positive: Verify the refresh Captcha ");
         LoginPage lp = new LoginPage(driver);
         String initialCaptchaSrc = lp.attributCaptch();
         lp.clkRefreshCaptcha();
@@ -70,19 +71,19 @@ public class Test_Login extends MainClass {
         if (!initialCaptchaSrc.equals(newCaptchaSrc)) {
 
             test.log(Status.PASS, "Test Pass : Captcha refresh is working. The captcha has changed.");
-            logger.info("Test Pass : Captcha refresh is working. The captcha has changed.");
+            logger.info("Test Passed : Captcha refresh is working. The captcha has changed.");
         } else {
 
             test.log(Status.FAIL, "Test Fail : Captcha refresh is not working. The captcha has not changed.");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Captcha refresh is not working. The captcha has not changed.");
+            logger.error("Test Failed : Captcha refresh is not working. The captcha has not changed.");
         }
 
     }
 
     @Test(priority = 4)
     public void test_Clear_Button() throws InterruptedException, IOException {
-        test = extent.createTest("Verify the refresh Captcha ");
+        test = extent.createTest("Positive: Verify the refresh Captcha ");
         LoginPage lp = new LoginPage(driver);
         lp.enterUsername("USER1");
         lp.enterPassword("Password");
@@ -90,17 +91,17 @@ public class Test_Login extends MainClass {
         lp.clkClrbtn();
         if (lp.atrributUsername()) {
             test.log(Status.PASS, "Test Pass : Clear button functionality");
-            logger.info("Test Pass : Clear button functionality");
+            logger.info("Test Passed : Clear button functionality");
         } else {
             test.log(Status.FAIL, "Test Fail : Clear button functionality");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Clear button functionality");
+            logger.error("Test Failed : Clear button functionality");
         }
     }
 
     @Test(priority = 5)
     public void test_Empty_User_Password() throws InterruptedException {
-        test = extent.createTest("Verify Empty Username and Password ");
+        test = extent.createTest("Negative: Verify Empty Username and Password ");
         LoginPage lp = new LoginPage(driver);
         String str1 = JOptionPane.showInputDialog("Enter Captcha");
         lp.enterCaptcha(str1);
@@ -115,17 +116,17 @@ public class Test_Login extends MainClass {
 
         if (actualErrUsername.equalsIgnoreCase(expectErrUsername) && actualErrPassword.equalsIgnoreCase(expectErrPassword)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for empty fields.");
-            logger.info("Test Pass : Correct error messages displayed for empty fields.");
+            logger.info("Test Passed : Correct error messages displayed for empty fields.");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed.");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed.");
+            logger.error("Test Failed : Error messages not displayed.");
         }
     }
 
     @Test(priority = 6)
     public void test_Empty_Username() throws InterruptedException {
-        test = extent.createTest("Verify Empty Username");
+        test = extent.createTest("Negative: Verify Empty Username");
         LoginPage lp = new LoginPage(driver);
         lp.enterPassword("Karvy@123");
         lp.clrUsername();
@@ -135,17 +136,17 @@ public class Test_Login extends MainClass {
         Thread.sleep(1000);
         if (actualErrUsername.equalsIgnoreCase(expectErrUsername)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for empty Username");
-            logger.info("Test Pass : Correct error messages displayed for empty Username");
+            logger.info("Test Passed : Correct error messages displayed for empty Username");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Username");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Username");
+            logger.error("Test Failed : Error messages not displayed for Username");
         }
     }
 
     @Test(priority = 7)
     public void test_Empty_Password() throws InterruptedException {
-        test = extent.createTest("Verify Empty Password");
+        test = extent.createTest("Negative: Verify Empty Password");
         LoginPage lp = new LoginPage(driver);
         lp.clrPassword();
         lp.enterUsername("CSAUSER1");
@@ -156,17 +157,17 @@ public class Test_Login extends MainClass {
         Thread.sleep(1000);
         if (actualErrPassword.equalsIgnoreCase(expectErrPassword)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for empty Password");
-            logger.info("Test Pass : Correct error messages displayed for empty Password");
+            logger.info("Test Passed : Correct error messages displayed for empty Password");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Password");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Password");
+            logger.error("Test Failed : Error messages not displayed for Password");
         }
     }
 
     @Test(priority = 8)
     public void test_Invalid_Username() throws InterruptedException {
-        test = extent.createTest("Verify Invalid Username");
+        test = extent.createTest("Negative: Verify Invalid Username");
         LoginPage lp = new LoginPage(driver);
         lp.clrPassword();
         lp.clrUsername();
@@ -180,11 +181,11 @@ public class Test_Login extends MainClass {
         Thread.sleep(1000);
         if (actualErrCredential.equalsIgnoreCase(expectErrCredential)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for Invalid Username");
-            logger.info("Test Pass : Correct error messages displayed for Invalid Username");
+            logger.info("Test Passed : Correct error messages displayed for Invalid Username");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Invalid Username");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Invalid Username");
+            logger.error("Test Failed : Error messages not displayed for Invalid Username");
         }
 
         lp.clkOK();
@@ -193,7 +194,7 @@ public class Test_Login extends MainClass {
 
     @Test(priority = 9)
     public void test_Invalid_Password() throws InterruptedException {
-        test = extent.createTest("Verify Invalid Password");
+        test = extent.createTest("Negative: Verify Invalid Password");
         LoginPage lp = new LoginPage(driver);
         lp.clrPassword();
         lp.clrUsername();
@@ -208,18 +209,18 @@ public class Test_Login extends MainClass {
         Thread.sleep(1000);
         if (actualErrCredential.equalsIgnoreCase(expectErrCredential)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for Invalid Password");
-            logger.info("Test Pass : Correct error messages displayed for Invalid Password");
+            logger.info("Test Passed : Correct error messages displayed for Invalid Password");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Invalid Password");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Invalid Password");
+            logger.error("Test Failed : Error messages not displayed for Invalid Password");
         }
         lp.clkOK();
     }
 
     @Test(priority = 10)
     public void test_Invalid_Username_Password() throws InterruptedException {
-        test = extent.createTest("Verify Invalid Username and Password");
+        test = extent.createTest("Negative: Verify Invalid Username and Password");
         LoginPage lp = new LoginPage(driver);
         lp.clrPassword();
         lp.clrUsername();
@@ -231,18 +232,18 @@ public class Test_Login extends MainClass {
         Thread.sleep(1000);
         if (actualErrCredential.equalsIgnoreCase(expectErrCredential)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for Invalid Username and Password");
-            logger.info("Test Pass : Correct error messages displayed for Invalid Username and Password");
+            logger.info("Test Passed : Correct error messages displayed for Invalid Username and Password");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Invalid Username and Password");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Invalid Username and Password");
+            logger.error("Test Failed : Error messages not displayed for Invalid Username and Password");
         }
         lp.clkOK();
     }
 
     @Test(priority = 11)
     public void test_Empty_Captcha() throws InterruptedException {
-        test = extent.createTest("Verify Empty Captcha");
+        test = extent.createTest("Negative: Verify Empty Captcha");
         LoginPage lp = new LoginPage(driver);
         lp.clrPassword();
         lp.clrUsername();
@@ -257,18 +258,18 @@ public class Test_Login extends MainClass {
 
         if (actualErrCaptcha.equalsIgnoreCase(expectErrCaptcha)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for Empty Captcha ");
-            logger.info("Test Pass : Correct error messages displayed for Empty Captcha");
+            logger.info("Test Passed : Correct error messages displayed for Empty Captcha");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Empty Captcha");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Empty Captcha");
+            logger.error("Test Failed : Error messages not displayed for Empty Captcha");
         }
 
     }
 
     @Test(priority = 12)
     public void test_Invalid_Captcha() throws InterruptedException {
-        test = extent.createTest("Verify Invalid Captcha");
+        test = extent.createTest("Negative: Verify Invalid Captcha");
         LoginPage lp = new LoginPage(driver);
         lp.clrPassword();
         lp.clrUsername();
@@ -282,11 +283,11 @@ public class Test_Login extends MainClass {
         Thread.sleep(1000);
         if (actualErrCaptcha.equalsIgnoreCase(expectErrCaptcha)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for Invalid Captcha ");
-            logger.info("Test Pass : Correct error messages displayed for Invalid Captcha");
+            logger.info("Test Passed : Correct error messages displayed for Invalid Captcha");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Invalid Captcha");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Invalid Captcha");
+            logger.error("Test Failed : Error messages not displayed for Invalid Captcha");
         }
         lp.clkOK();
     }
@@ -294,7 +295,7 @@ public class Test_Login extends MainClass {
     @Test(priority = 13)
     public void test_Credential_Case_Sensetive() throws IOException, InterruptedException {
 
-        test = extent.createTest("Verify Credential Case Sensitive");
+        test = extent.createTest("Negative: Verify Credential Case Sensitive");
         pro = Property.readPropertiesFile(System.getProperty("user.dir") + "/src/main/resources/Properties/Credentials.properties");
         LoginHelper.login(pro.getProperty("CallCenter_UserID").toLowerCase(), pro.getProperty("CallCenter_Password").toUpperCase());
         LoginPage lp = new LoginPage(driver);
@@ -303,11 +304,11 @@ public class Test_Login extends MainClass {
         Thread.sleep(1000);
         if (actualErrCredential.equalsIgnoreCase(expectErrCredential)) {
             test.log(Status.PASS, "Test Pass : Correct error messages displayed for Case Sensitive Username and Password");
-            logger.info("Test Pass : Correct error messages displayed for Case Sensitive Username and Password");
+            logger.info("Test Passed : Correct error messages displayed for Case Sensitive Username and Password");
         } else {
             test.log(Status.FAIL, "Test Fail : Error messages not displayed for Case Sensitive Username and Password");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Error messages not displayed for Case Sensitive Username and Password");
+            logger.error("Test Failed : Error messages not displayed for Case Sensitive Username and Password");
         }
         lp.clkOK();
     }
@@ -315,7 +316,7 @@ public class Test_Login extends MainClass {
     @Test(priority = 14)
     public void test_Hindi_Language() throws InterruptedException {
 
-        test = extent.createTest("Verify Hindi Language UI");
+        test = extent.createTest("Positive: Verify Hindi Language UI");
         LoginPage lp = new LoginPage(driver);
         lp.clkLanguageDropdown();
         Thread.sleep(1000);
@@ -329,11 +330,11 @@ public class Test_Login extends MainClass {
         if (actualHindLang.equals(expectedHindiLang)) {
 
             test.log(Status.PASS, "Test Pass : Expected Hindi UI present on the page. ");
-            logger.info("Test Pass : Expected Hindi UI present on the page.");
+            logger.info("Test Passed : Expected Hindi UI present on the page.");
         } else {
             test.log(Status.FAIL, "Test Fail : Expected Hindi UI is not present on the page.");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Expected Hindi UI is not present on the page.");
+            logger.error("Test Failed : Expected Hindi UI is not present on the page.");
         }
 
     }
@@ -341,7 +342,7 @@ public class Test_Login extends MainClass {
     @Test(priority = 15)
     public void test_English_Language() throws InterruptedException {
 
-        test = extent.createTest("Verify English Language UI");
+        test = extent.createTest("Positive: Verify English Language UI");
         LoginPage lp = new LoginPage(driver);
         lp.clkLanguageDropdown();
         Thread.sleep(1000);
@@ -355,18 +356,18 @@ public class Test_Login extends MainClass {
         if (actualEnglishLang.equals(expectedEnglishLang)) {
 
             test.log(Status.PASS, "Test Pass : Expected English UI present on the page. ");
-            logger.info("Test Pass : Expected English UI present on the page.");
+            logger.info("Test Passed : Expected English UI present on the page.");
         } else {
             test.log(Status.FAIL, "Test Fail : Expected English UI is not present on the page.");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Expected English UI is not present on the page.");
+            logger.error("Test Failed : Expected English UI is not present on the page.");
         }
     }
 
     @Test(priority = 16)
     public void test_Valid_Credentials() throws IOException, InterruptedException {
 
-        test = extent.createTest("Verify Valid Credentials");
+        test = extent.createTest("Positive: Verify Valid Credentials");
         LoginPage lp = new LoginPage(driver);
         lp.clrUsername();
         lp.clrPassword();
@@ -379,14 +380,22 @@ public class Test_Login extends MainClass {
         if (actualViewEdit.equals(expectedViewEdit)) {
 
             test.log(Status.PASS, "Test Pass : Login is successful");
-            logger.info("Test Pass : Login is successful");
+            logger.info("Test Passed : Login is successful");
         } else {
             test.log(Status.FAIL, "Test Fail : Login is not successful");
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-            logger.error("Test Fail : Login is not successful");
+            logger.error("Test Failed : Login is not successful");
         }
 
     }
+
+
+    @AfterClass
+    public void logOut() throws InterruptedException {
+        CallcenterRegPage cr = new CallcenterRegPage(driver);
+        cr.logOutSuccess();
+    }
+
 
 }
 

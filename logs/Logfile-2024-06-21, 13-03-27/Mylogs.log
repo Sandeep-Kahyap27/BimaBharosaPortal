@@ -1,0 +1,14 @@
+2024-06-21T13:03:58,129 [main] INFO  (Test_CallCenterModule.java:47) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-21T13:04:03,533 [main] INFO  (Test_CallCenterModule.java:72) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-21T13:04:04,872 [main] INFO  (Test_CallCenterModule.java:161) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-21T13:04:09,274 [main] INFO  (Test_CallCenterModule.java:268) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-21T13:04:09,482 [main] INFO  (Test_CallCenterModule.java:373) - Test Passed : Pin code field is visible
+2024-06-21T13:04:12,969 [main] INFO  (Test_CallCenterModule.java:413) - Test Passed : District and state auto populated for valid pinCode
+2024-06-21T13:04:15,539 [main] INFO  (Test_CallCenterModule.java:446) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-21T13:04:20,248 [main] INFO  (Test_CallCenterModule.java:629) - Test Passed : Error message displayed for empty complaint details field
+2024-06-21T13:04:21,647 [main] INFO  (Test_CallCenterModule.java:690) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-21T13:04:30,153 [main] INFO  (Test_CallCenterModule.java:710) - Test Passed : Error message displayed when date of letter not selected
+2024-06-21T13:04:31,130 [main] INFO  (Test_CallCenterModule.java:729) - Test Passed : Error message displayed for invalid date format
+2024-06-21T13:04:38,691 [main] INFO  (Test_CallCenterModule.java:749) - Test Passed : Error message displayed when date of receipt of complaint not selected
+2024-06-21T13:04:39,605 [main] INFO  (Test_CallCenterModule.java:768) - Test Passed : Error message displayed for date of receipt of complaint with invalid date format
+2024-06-21T13:04:41,017 [main] INFO  (Test_CallCenterModule.java:790) - Test Passed : Call center user is not able to upload other file formats

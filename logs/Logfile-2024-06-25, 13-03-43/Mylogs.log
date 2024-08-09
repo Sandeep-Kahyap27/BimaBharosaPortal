@@ -1,0 +1,9 @@
+2024-06-25T13:04:15,107 [main] INFO  (Test_CallCenterDoesNotPertain.java:44) - Test Pass : Navigation to the Does Not Pertain page is successful
+2024-06-25T13:04:15,330 [main] INFO  (Test_CallCenterDoesNotPertain.java:63) - Test Pass : Test Pass : The table contain the default data
+2024-06-25T13:04:15,451 [main] INFO  (Test_CallCenterDoesNotPertain.java:81) - Test Pass : The table contain the Specific data
+2024-06-25T13:04:27,669 [main] INFO  (Test_CallCenterDoesNotPertain.java:105) - Test Pass : Next Button is Clickable 
+2024-06-25T13:04:27,727 [main] INFO  (Test_CallCenterDoesNotPertain.java:123) - Test Pass : Previous Button is Clickable
+2024-06-25T13:04:40,158 [main] INFO  (Test_CallCenterDoesNotPertain.java:146) - Test Pass : Edit Icon is Clickable and We able to navigate Update Insurer Page
+2024-06-25T13:04:40,273 [main] INFO  (Test_CallCenterDoesNotPertain.java:184) - Test Pass : Back is Clickable
+2024-06-25T13:04:49,387 [main] INFO  (Test_CallCenterDoesNotPertain.java:167) - Test Pass : Update is Clickable
+2024-06-25T13:05:08,148 [main] INFO  (Test_CallCenterDoesNotPertain.java:234) - Test Pass : We are able to update the Insurance Company

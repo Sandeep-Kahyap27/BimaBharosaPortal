@@ -16,7 +16,7 @@ public class Test_ComplaintRegistration_InsIntermediary extends MainClass {
 
         loadURL("Url");
 
-        test = extent.createTest("Verify user is able to register complaint against Insurance Intermediary");
+        test = extent.createTest("Positive: Verify user is able to register complaint against Insurance Intermediary");
         HomePage h = new HomePage(driver);
         h.registration();
 
@@ -55,23 +55,23 @@ public class Test_ComplaintRegistration_InsIntermediary extends MainClass {
         if(reg.registerComplaint()){
             if(Msg.equals("Complaint Registered Successfully.")){
                 test.log(Status.PASS,"Complaint Registered Against Insurance Intermediary.");
-                logger.info("Complaint Registered Against Insurance Intermediary.");
+                logger.info("Test Passed : Complaint Registered Against Insurance Intermediary.");
             }
             else{
                 test.log(Status.FAIL, "Complaint not registered Against Insurance Intermediary.");
                 test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-                logger.error("Complaint not registered Against Insurance Intermediary.");
+                logger.error("Test Failed : Complaint not registered Against Insurance Intermediary.");
             }
         }
         else{
             if(Msg.equals("Complaint has been already registered with same policy number and same complaint description")){
                 test.log(Status.PASS, "Complaint not registering with duplicate policy number and complaint description");
-                logger.info("Complaint not registering with duplicate policy number and complaint description");
+                logger.info("Test Passed : Complaint not registering with duplicate policy number and complaint description");
             }
             else{
                 test.log(Status.FAIL, "Duplicate complaint registered");
                 test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
-                logger.error("Duplicate complaint registered");
+                logger.error("Test Failed : Duplicate complaint registered");
             }
 
         }

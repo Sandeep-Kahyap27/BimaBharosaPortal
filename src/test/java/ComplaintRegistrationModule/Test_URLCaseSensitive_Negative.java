@@ -20,7 +20,7 @@ public class Test_URLCaseSensitive_Negative extends MainClass {
 
         loadURL("Url");
 
-        test = extent.createTest("Verify URL is not case sensitive");
+        test = extent.createTest("Negative: Verify URL is not case sensitive");
 
         Properties prop = Property.readPropertiesFile(filePath);
         String CaseSensitiveURL = (prop.getProperty("Url")).toUpperCase();
@@ -38,8 +38,5 @@ public class Test_URLCaseSensitive_Negative extends MainClass {
             test.fail(new Throwable(), MediaEntityBuilder.createScreenCaptureFromBase64String(Screenshot.captureScreenShot()).build());
             logger.error("Test Failed : URL is not redirecting to the correct page");
         }
-
-
-
     }
 }

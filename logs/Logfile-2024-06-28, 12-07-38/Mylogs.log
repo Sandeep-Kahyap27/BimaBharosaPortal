@@ -1,0 +1,55 @@
+2024-06-28T12:08:37,621 [main] INFO  (Test_CallCenterModule.java:50) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-28T12:08:42,717 [main] INFO  (Test_CallCenterModule.java:75) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-28T12:08:42,783 [main] INFO  (Test_CallCenterModule.java:94) - Test Passed : Identify By drop down is visible on the web page
+2024-06-28T12:08:42,817 [main] INFO  (Test_CallCenterModule.java:104) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-28T12:08:42,850 [main] INFO  (Test_CallCenterModule.java:114) - Test Passed : Search button present on the web page
+2024-06-28T12:08:42,885 [main] INFO  (Test_CallCenterModule.java:124) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-28T12:08:43,150 [main] INFO  (Test_CallCenterModule.java:134) - Test Passed : All fields related to complaint classification is visible on registration page
+2024-06-28T12:08:43,276 [main] INFO  (Test_CallCenterModule.java:144) - Test Passed : Policy/Proposal Number/Certificate Number/Claim Number radio buttons are displayed
+2024-06-28T12:08:43,324 [main] INFO  (Test_CallCenterModule.java:154) - Test Passed : Policy number field is visible and enabled
+2024-06-28T12:08:43,370 [main] INFO  (Test_CallCenterModule.java:164) - Test Passed : Complaint details field is visible and enabled
+2024-06-28T12:08:53,706 [main] INFO  (Test_CallCenterModule.java:196) - Test Passed : Back button functionality is working by dismissing alert pop up
+2024-06-28T12:09:03,917 [main] INFO  (Test_CallCenterModule.java:219) - Test Passed : Back button functionality is working by accepting alert pop up
+2024-06-28T12:09:13,026 [main] INFO  (Test_CallCenterModule.java:241) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-28T12:09:14,322 [main] INFO  (Test_CallCenterModule.java:261) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-28T12:09:14,337 [main] INFO  (Test_CallCenterModule.java:279) - Test Passed : Search button is enabled
+2024-06-28T12:09:20,621 [main] INFO  (Test_CallCenterModule.java:300) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-28T12:09:22,895 [main] INFO  (Test_CallCenterModule.java:322) - Test Passed : Error message displayed for empty mobile number
+2024-06-28T12:09:27,147 [main] INFO  (Test_CallCenterModule.java:346) - Test Passed : Error message displayed for less than 10 digit mobile number
+2024-06-28T12:09:31,486 [main] INFO  (Test_CallCenterModule.java:368) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-28T12:09:36,943 [main] INFO  (Test_CallCenterModule.java:392) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-28T12:09:40,193 [main] INFO  (Test_CallCenterModule.java:414) - Test Passed : Warning pop up displayed when searching with empty emailID field
+2024-06-28T12:09:45,624 [main] INFO  (Test_CallCenterModule.java:435) - Test Passed : Warning popUp displayed for invalid email Id
+2024-06-28T12:09:49,971 [main] INFO  (Test_CallCenterModule.java:456) - Test Passed : Existing user details displayed correctly with valid email ID
+2024-06-28T12:09:50,130 [main] INFO  (Test_CallCenterModule.java:473) - Test Passed : Pin code field is visible
+2024-06-28T12:09:53,744 [main] INFO  (Test_CallCenterModule.java:493) - Test Passed : District and state not populated for invalid pinCode
+2024-06-28T12:09:57,123 [main] INFO  (Test_CallCenterModule.java:513) - Test Passed : District and state auto populated for valid pinCode
+2024-06-28T12:09:57,266 [main] INFO  (Test_CallCenterModule.java:529) - Test Passed : Call center user is able to interact with complaint against dropdown
+2024-06-28T12:09:59,610 [main] INFO  (Test_CallCenterModule.java:546) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-28T12:10:01,912 [main] INFO  (Test_CallCenterModule.java:565) - Test Passed : Expected error message displayed for select option in complaint against dropdown
+2024-06-28T12:10:09,595 [main] INFO  (Test_CallCenterModule.java:585) - Test Passed : Only Required fields are visible for complaint against unregistered entity without involvement of insurance company
+2024-06-28T12:10:16,219 [main] INFO  (Test_CallCenterModule.java:606) - Test Passed : Required fields are visible for complaint against unregistered entity with involvement of insurance company
+2024-06-28T12:10:20,588 [main] INFO  (Test_CallCenterModule.java:625) - Test Passed : Required fields are visible for complaint against insurance intermediary
+2024-06-28T12:10:22,892 [main] INFO  (Test_CallCenterModule.java:644) - Test Passed : Broker dropdown list and it's license number field is visible
+2024-06-28T12:10:25,727 [main] INFO  (Test_CallCenterModule.java:654) - Test Passed : Broker license number populated correctly
+2024-06-28T12:10:25,868 [main] INFO  (Test_CallCenterModule.java:673) - Test Passed : All identifier type radio buttons are enabled
+2024-06-28T12:10:26,214 [main] INFO  (Test_CallCenterModule.java:693) - Test Passed : Error message displayed for empty policy/proposal/certificate/claim number field
+2024-06-28T12:10:38,025 [main] INFO  (Test_CallCenterModule.java:713) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-28T12:10:42,541 [main] INFO  (Test_CallCenterModule.java:737) - Test Passed : Error message displayed for empty complaint details field
+2024-06-28T12:10:43,840 [main] INFO  (Test_CallCenterModule.java:757) - Test Passed : Error message displayed for special characters entered in complaint details field
+2024-06-28T12:11:05,367 [main] INFO  (Test_CallCenterModule.java:777) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-28T12:11:06,797 [main] INFO  (Test_CallCenterModule.java:797) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-28T12:11:15,197 [main] INFO  (Test_CallCenterModule.java:817) - Test Passed : Error message displayed when date of letter not selected
+2024-06-28T12:11:15,766 [main] INFO  (Test_CallCenterModule.java:836) - Test Passed : Error message displayed for invalid date format
+2024-06-28T12:11:17,145 [main] INFO  (Test_CallCenterModule.java:856) - Test Passed : Error message displayed when date of receipt of complaint not selected
+2024-06-28T12:11:17,765 [main] INFO  (Test_CallCenterModule.java:875) - Test Passed : Error message displayed for date of receipt of complaint with invalid date format
+2024-06-28T12:11:21,287 [main] INFO  (Test_CallCenterModule.java:898) - Test Passed : Call center user is not able to upload other file formats
+2024-06-28T12:11:23,511 [main] INFO  (Test_CallCenterModule.java:920) - Test Passed : Call center user is not able to upload more than 10mb size file
+2024-06-28T12:11:26,034 [main] INFO  (Test_CallCenterModule.java:941) - Test Passed : Error message displayed for special characters entered in priority handling details field
+2024-06-28T12:11:46,722 [main] INFO  (Test_CallCenterModule.java:959) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-28T12:11:47,270 [main] INFO  (Test_CallCenterModule.java:979) - Test Passed : Error message displayed for special characters entered in remarks field
+2024-06-28T12:12:08,159 [main] INFO  (Test_CallCenterModule.java:998) - Test Passed : Alert pop up displayed when reaching maximum limit
+2024-06-28T12:12:15,659 [main] INFO  (Test_CallCenterModule.java:1020) - Test Passed : Call center user not able to logOff by dismissing alert pop up
+2024-06-28T12:12:17,329 [main] INFO  (Test_CallCenterModule.java:1040) - Test Passed : Call center user is able to logOff successfully
+2024-06-28T12:13:59,496 [main] INFO  (Test_CallCenterRegistration_Against_Broker.java:66) - Test Passed :Complaint registered Against Broker by Call Center User
+2024-06-28T12:15:41,267 [main] INFO  (Test_CallCenterRegistration_Against_Insurance_Company.java:65) - Test Passed : Complaint registered Against Insurance company on behalf of policy holder

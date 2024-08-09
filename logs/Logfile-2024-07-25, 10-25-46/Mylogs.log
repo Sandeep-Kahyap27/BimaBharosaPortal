@@ -1,0 +1,4 @@
+2024-07-25T10:27:10,040 [main] ERROR (Test_UploadComplaintsPage.java:85) - Test Failed : Upload excel file field not displayed
+2024-07-25T10:27:10,133 [main] INFO  (Test_UploadComplaintsPage.java:90) - Test Passed : Upload button enabled and visible
+2024-07-25T10:27:10,196 [main] INFO  (Test_UploadComplaintsPage.java:100) - Test Passed : Clear button enabled and visible
+2024-07-25T10:27:10,259 [main] INFO  (Test_UploadComplaintsPage.java:110) - Test Passed : DownloadTemplate button visible and enabled

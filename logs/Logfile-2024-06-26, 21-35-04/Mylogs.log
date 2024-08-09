@@ -1,0 +1,15 @@
+2024-06-26T21:36:16,808 [main] INFO  (Test_CallCenterViewEdit.java:48) - Test Passed : Navigation to the View/Edit page is successful
+2024-06-26T21:36:23,347 [main] INFO  (Test_CallCenterViewEdit.java:94) - Test Passed : All buttons are visible and clickable on View/Edit Page
+2024-06-26T21:36:29,572 [main] INFO  (Test_CallCenterViewEdit.java:114) - Test Passed : Correct error messages displayed when searching without data
+2024-06-26T21:36:34,013 [main] INFO  (Test_CallCenterViewEdit.java:137) - Test Passed : The table shows zero entities with Invalid Complaint Number .
+2024-06-26T21:36:44,118 [main] INFO  (Test_CallCenterViewEdit.java:166) - Test Passed : The table shows Valid Complaint Number entity.
+2024-06-26T21:36:51,686 [main] INFO  (Test_CallCenterViewEdit.java:191) - Test Passed : The table shows zero entities with Invalid Entity Reference Number.
+2024-06-26T21:37:00,276 [main] INFO  (Test_CallCenterViewEdit.java:219) - Test Passed : The table shows entity Valid Entity Reference Number .
+2024-06-26T21:37:07,762 [main] INFO  (Test_CallCenterViewEdit.java:244) - Test Passed : The table shows zero entities with Invalid Policy Number.
+2024-06-26T21:37:16,357 [main] INFO  (Test_CallCenterViewEdit.java:272) - Test Passed : The table shows entity Valid Policy Number .
+2024-06-26T21:37:23,833 [main] INFO  (Test_CallCenterViewEdit.java:297) - Test Passed : The table shows zero entities with Invalid Complainant Name.
+2024-06-26T21:37:31,359 [main] INFO  (Test_CallCenterViewEdit.java:324) - Test Passed : The table shows entity Valid Complainant Name .
+2024-06-26T21:37:38,941 [main] INFO  (Test_CallCenterViewEdit.java:348) - Test Passed : The table shows zero entities with Invalid Mobile Number
+2024-06-26T21:37:46,453 [main] INFO  (Test_CallCenterViewEdit.java:375) - Test Passed : The table shows entity Valid Mobile Number
+2024-06-26T21:37:54,547 [main] INFO  (Test_CallCenterViewEdit.java:400) - Test Passed : Edit Icon is Clickable and We able to navigate Update Complaint Page
+2024-06-26T21:38:06,087 [main] INFO  (Test_CallCenterViewEdit.java:423) - Test Passed : Cancel Button is Clickable and We able to navigate View/Edit Page

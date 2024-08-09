@@ -1,0 +1,43 @@
+2024-06-21T14:55:43,876 [main] INFO  (Test_CallCenterModule.java:47) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-21T14:55:49,163 [main] INFO  (Test_CallCenterModule.java:72) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-21T14:55:49,256 [main] INFO  (Test_CallCenterModule.java:91) - Test Passed : Identify By drop down is visible on the web page
+2024-06-21T14:55:49,303 [main] INFO  (Test_CallCenterModule.java:101) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-21T14:55:49,344 [main] INFO  (Test_CallCenterModule.java:111) - Test Passed : Search button present on the web page
+2024-06-21T14:55:49,395 [main] INFO  (Test_CallCenterModule.java:121) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-21T14:55:53,862 [main] INFO  (Test_CallCenterModule.java:141) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-21T14:55:55,413 [main] INFO  (Test_CallCenterModule.java:161) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-21T14:55:55,461 [main] INFO  (Test_CallCenterModule.java:179) - Test Passed : Search button is enabled
+2024-06-21T14:56:02,252 [main] INFO  (Test_CallCenterModule.java:200) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-21T14:56:04,671 [main] INFO  (Test_CallCenterModule.java:222) - Test Passed : Error message displayed for empty mobile number
+2024-06-21T14:56:09,151 [main] INFO  (Test_CallCenterModule.java:246) - Test Passed : Error message displayed for less than 10 digit mobile number
+2024-06-21T14:56:13,779 [main] INFO  (Test_CallCenterModule.java:268) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-21T14:56:19,671 [main] INFO  (Test_CallCenterModule.java:292) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-21T14:56:23,110 [main] INFO  (Test_CallCenterModule.java:314) - Test Passed : Warning pop up displayed when searching with empty emailID field
+2024-06-21T14:56:28,757 [main] INFO  (Test_CallCenterModule.java:335) - Test Passed : Warning popUp displayed for invalid email Id
+2024-06-21T14:56:33,426 [main] INFO  (Test_CallCenterModule.java:356) - Test Passed : Existing user details displayed correctly with valid email ID
+2024-06-21T14:56:33,628 [main] INFO  (Test_CallCenterModule.java:373) - Test Passed : Pin code field is visible
+2024-06-21T14:56:37,137 [main] INFO  (Test_CallCenterModule.java:393) - Test Passed : District and state not populated for invalid pinCode
+2024-06-21T14:56:40,818 [main] INFO  (Test_CallCenterModule.java:413) - Test Passed : District and state auto populated for valid pinCode
+2024-06-21T14:56:41,057 [main] INFO  (Test_CallCenterModule.java:429) - Test Passed : Call center user is able to interact with complaint against dropdown
+2024-06-21T14:56:43,648 [main] INFO  (Test_CallCenterModule.java:446) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-21T14:56:46,198 [main] INFO  (Test_CallCenterModule.java:465) - Test Passed : Expected error message displayed for select option in complaint against dropdown
+2024-06-21T14:56:54,277 [main] INFO  (Test_CallCenterModule.java:485) - Test Passed : Only Required fields are visible for complaint against unregistered entity without involvement of insurance company
+2024-06-21T14:57:01,270 [main] INFO  (Test_CallCenterModule.java:506) - Test Passed : Required fields are visible for complaint against unregistered entity with involvement of insurance company
+2024-06-21T14:57:06,031 [main] INFO  (Test_CallCenterModule.java:525) - Test Passed : Required fields are visible for complaint against insurance intermediary
+2024-06-21T14:57:08,615 [main] INFO  (Test_CallCenterModule.java:544) - Test Passed : Broker dropdown list and it's license number field is visible
+2024-06-21T14:57:11,303 [main] INFO  (Test_CallCenterModule.java:554) - Test Passed : Broker license number populated correctly
+2024-06-21T14:57:11,494 [main] INFO  (Test_CallCenterModule.java:573) - Test Passed : All identifier type radio buttons are enabled
+2024-06-21T14:57:12,061 [main] INFO  (Test_CallCenterModule.java:593) - Test Passed : Error message displayed for empty policy/proposal/certificate/claim number field
+2024-06-21T14:57:17,274 [main] INFO  (Test_CallCenterModule.java:638) - Test Passed : Error message displayed for empty complaint details field
+2024-06-21T14:57:18,942 [main] INFO  (Test_CallCenterModule.java:658) - Test Passed : Error message displayed for special characters entered in complaint details field
+2024-06-21T14:57:20,665 [main] INFO  (Test_CallCenterModule.java:699) - Test Passed : Error message displayed when source of complaint not selected
+2024-06-21T14:57:29,282 [main] INFO  (Test_CallCenterModule.java:719) - Test Passed : Error message displayed when date of letter not selected
+2024-06-21T14:57:30,395 [main] INFO  (Test_CallCenterModule.java:738) - Test Passed : Error message displayed for invalid date format
+2024-06-21T14:57:31,930 [main] INFO  (Test_CallCenterModule.java:758) - Test Passed : Error message displayed when date of receipt of complaint not selected
+2024-06-21T14:57:33,000 [main] INFO  (Test_CallCenterModule.java:777) - Test Passed : Error message displayed for date of receipt of complaint with invalid date format
+2024-06-21T14:57:35,509 [main] INFO  (Test_CallCenterModule.java:799) - Test Passed : Call center user is not able to upload other file formats
+2024-06-21T14:57:37,895 [main] INFO  (Test_CallCenterModule.java:821) - Test Passed : Call center user is not able to upload more than 10mb size file
+2024-06-21T14:57:41,234 [main] INFO  (Test_CallCenterModule.java:842) - Test Passed : Error message displayed for special characters entered in priority handling details field
+2024-06-21T14:57:42,312 [main] INFO  (Test_CallCenterModule.java:882) - Test Passed : Error message displayed for special characters entered in remarks field
+2024-06-21T14:57:52,837 [main] INFO  (Test_CallCenterModule.java:928) - Test Passed : Back button functionality is working by dismissing alert pop up
+2024-06-21T14:58:02,813 [main] INFO  (Test_CallCenterModule.java:951) - Test Passed : Back button functionality is working by accepting alert pop up

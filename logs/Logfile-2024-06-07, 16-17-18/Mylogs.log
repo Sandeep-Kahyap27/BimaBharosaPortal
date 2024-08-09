@@ -1,0 +1,11 @@
+2024-06-07T16:18:10,905 [main] INFO  (Test_CallCenterModule.java:42) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-07T16:18:16,972 [main] INFO  (Test_CallCenterModule.java:66) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-07T16:18:17,009 [main] INFO  (Test_CallCenterModule.java:84) - Test Passed : Identify By drop down is visible on the web page
+2024-06-07T16:18:17,026 [main] INFO  (Test_CallCenterModule.java:93) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-07T16:18:17,043 [main] INFO  (Test_CallCenterModule.java:102) - Test Passed : Search button present on the web page
+2024-06-07T16:18:17,131 [main] INFO  (Test_CallCenterModule.java:111) - Test Passed : PinCode checkbox and field visible
+2024-06-07T16:18:21,307 [main] INFO  (Test_CallCenterModule.java:130) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-07T16:18:22,508 [main] INFO  (Test_CallCenterModule.java:149) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-07T16:18:22,526 [main] INFO  (Test_CallCenterModule.java:166) - Test Passed : Search button is enabled
+2024-06-07T16:18:28,744 [main] INFO  (Test_CallCenterModule.java:186) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-07T16:18:30,922 [main] INFO  (Test_CallCenterModule.java:209) - Test Passed : Error message displayed for empty mobile number

@@ -1,0 +1,14 @@
+2024-06-10T14:57:25,729 [main] INFO  (Test_CallCenterModule.java:43) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-10T14:57:31,896 [main] INFO  (Test_CallCenterModule.java:67) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-10T14:57:31,979 [main] INFO  (Test_CallCenterModule.java:85) - Test Passed : Identify By drop down is visible on the web page
+2024-06-10T14:57:32,034 [main] INFO  (Test_CallCenterModule.java:94) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-10T14:57:32,075 [main] INFO  (Test_CallCenterModule.java:103) - Test Passed : Search button present on the web page
+2024-06-10T14:57:32,227 [main] INFO  (Test_CallCenterModule.java:112) - Test Passed : PinCode checkbox and field visible
+2024-06-10T14:57:36,503 [main] INFO  (Test_CallCenterModule.java:131) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-10T14:57:37,904 [main] INFO  (Test_CallCenterModule.java:150) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-10T14:57:37,939 [main] INFO  (Test_CallCenterModule.java:167) - Test Passed : Search button is enabled
+2024-06-10T14:57:44,313 [main] INFO  (Test_CallCenterModule.java:187) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-10T14:57:46,623 [main] INFO  (Test_CallCenterModule.java:209) - Test Passed : Error message displayed for empty mobile number
+2024-06-10T14:57:50,901 [main] INFO  (Test_CallCenterModule.java:233) - Test Passed : Error message displayed for less than 10 digit mobile number
+2024-06-10T14:58:00,705 [main] INFO  (Test_CallCenterModule.java:268) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-10T14:58:03,985 [main] INFO  (Test_CallCenterModule.java:289) - Test Passed : Warning pop up displayed when searching with empty emailID field

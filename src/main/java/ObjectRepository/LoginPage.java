@@ -1,6 +1,7 @@
 package ObjectRepository;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -80,6 +81,18 @@ public class LoginPage {
     @CacheLookup
     private WebElement ViewEdit;
 
+    @FindBy(xpath = "//button[@id='Logout']")
+    @CacheLookup
+    private WebElement logoutBtn;
+
+    @FindBy(xpath = "//button[@id='btnConfirmSuccess']")
+    @CacheLookup
+    private WebElement logOffSuccess;
+
+    @FindBy(id = "btnConfirmCancel")
+    @CacheLookup
+    private static WebElement logOffCancel;
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -137,6 +150,29 @@ public class LoginPage {
 
     }
 
+    public void logOutSuccess() throws InterruptedException {
+        try{
+            logoutBtn.click();
+            Thread.sleep(1000);
+            logOffSuccess.click();
+        }
+        catch (NoSuchElementException e){
+
+        }
+    }
+
+    public void logOutCancel() throws InterruptedException {
+        try{
+            logoutBtn.click();
+            Thread.sleep(1000);
+            logOffCancel.click();
+        }
+        catch (NoSuchElementException e){
+
+        }
+    }
+
+
     public boolean displayClearBtn() {
         clrbtn.isDisplayed();
 
@@ -160,7 +196,6 @@ public class LoginPage {
         } else {
             return false;
         }
-
     }
 
     public String getTextErrUsername() {

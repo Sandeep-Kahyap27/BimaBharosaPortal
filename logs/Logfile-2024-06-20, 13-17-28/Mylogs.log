@@ -1,0 +1,20 @@
+2024-06-20T13:18:02,413 [main] INFO  (Test_CallCenterModule.java:47) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-20T13:18:07,910 [main] INFO  (Test_CallCenterModule.java:72) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-20T13:18:08,004 [main] INFO  (Test_CallCenterModule.java:91) - Test Passed : Identify By drop down is visible on the web page
+2024-06-20T13:18:08,068 [main] INFO  (Test_CallCenterModule.java:101) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-20T13:18:08,102 [main] INFO  (Test_CallCenterModule.java:111) - Test Passed : Search button present on the web page
+2024-06-20T13:18:08,145 [main] INFO  (Test_CallCenterModule.java:121) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-20T13:18:12,406 [main] INFO  (Test_CallCenterModule.java:141) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-20T13:18:13,797 [main] INFO  (Test_CallCenterModule.java:161) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-20T13:18:13,834 [main] INFO  (Test_CallCenterModule.java:179) - Test Passed : Search button is enabled
+2024-06-20T13:18:20,326 [main] INFO  (Test_CallCenterModule.java:200) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-20T13:18:22,645 [main] INFO  (Test_CallCenterModule.java:222) - Test Passed : Error message displayed for empty mobile number
+2024-06-20T13:18:26,939 [main] INFO  (Test_CallCenterModule.java:246) - Test Passed : Error message displayed for less than 10 digit mobile number
+2024-06-20T13:18:31,278 [main] INFO  (Test_CallCenterModule.java:268) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-20T13:18:36,863 [main] INFO  (Test_CallCenterModule.java:292) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-20T13:18:40,217 [main] INFO  (Test_CallCenterModule.java:314) - Test Passed : Warning pop up displayed when searching with empty emailID field
+2024-06-20T13:18:45,652 [main] INFO  (Test_CallCenterModule.java:335) - Test Passed : Warning popUp displayed for invalid email Id
+2024-06-20T13:18:50,040 [main] INFO  (Test_CallCenterModule.java:356) - Test Passed : Existing user details displayed correctly with valid email ID
+2024-06-20T13:18:50,218 [main] INFO  (Test_CallCenterModule.java:373) - Test Passed : Pin code field is visible
+2024-06-20T13:18:52,594 [main] INFO  (Test_CallCenterModule.java:393) - Test Passed : District and state not populated for invalid pinCode
+2024-06-20T13:18:54,965 [main] INFO  (Test_CallCenterModule.java:413) - Test Passed : District and state auto populated for valid pinCode

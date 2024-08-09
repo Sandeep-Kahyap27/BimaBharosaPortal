@@ -90,56 +90,27 @@ public class TrackComplaint_Page {
     @FindBy(id = "btnsuccessModal")
     private WebElement click_ok;
 
+    @FindBy(id = "ddlportalfeedback_chosen")
+    private WebElement feedbackForIGMSPortalEaseOfUse;
+    @FindBy(id = "ddlresolutinonfeedback_chosen")
+    private WebElement resolutionSatisfactionLevel;
+
+    @FindBy(xpath = "//span[text() = 'Logout']")
+    private WebElement logout;
+
+    @FindBy(id = "btnConfirmSuccess")
+    private WebElement update_record_success;
+
     public TrackComplaint_Page(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public boolean OTP_Field_visible() {
-        try {
-            return OTP.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-    }
-
-
-    public boolean hasSpecialCharacters(String inputString) {
-        // Define a regular expression pattern for special characters
-        Pattern pattern = Pattern.compile("[^a-zA-Z0-9]");
-
-        // Use the matcher method to check for a match
-        Matcher matcher = pattern.matcher(inputString);
-
-        // Return true if a special character is found, otherwise false
-        return matcher.find();
-
-    }
-
-    public boolean registed_complaint_visibility() {
-        try {
-            return visible_track_complaint.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-    }
-
+    /*Action Methods*/
     public void wait_for_60s() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait.until(ExpectedConditions.visibilityOf(Resend));
     }
-
-    public boolean resend_button_visibility() {
-        try {
-            return Resend.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-    }
-
 
     public void ResendBtnClk() throws InterruptedException {
         Thread.sleep(3000);
@@ -175,26 +146,6 @@ public class TrackComplaint_Page {
 
     }
 
-    public boolean view_edit_complaint_visibility() {
-        try {
-            return View_Edit_Complaints.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-    }
-
-    public boolean reg_new_complaint_visibility() {
-        try {
-            return Reg_New_Complaint.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-
-
-    }
-
     public void clearField_complaint_desc() throws InterruptedException {
         // Complaint_Description.click();
         Thread.sleep(3000);
@@ -211,45 +162,10 @@ public class TrackComplaint_Page {
         click_on_export.click();
     }
 
-    public boolean visibility_export() {
-        try {
-            return click_on_export.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
-    public boolean visibility_all_fields_of_table() {
-        try {
-            return visibility_table_heading.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
     public void close_menu_btn() {
 
         closemenubtn.click();
     }
-
-    public boolean show_entries() {
-        try {
-            entries.click();
-            entries.sendKeys(Keys.ARROW_DOWN);
-            entries.click();
-            entries.sendKeys(Keys.ARROW_DOWN);
-            entries.sendKeys(Keys.ARROW_DOWN);
-            entries.click();
-            entries.sendKeys(Keys.ARROW_DOWN);
-            entries.sendKeys(Keys.ARROW_DOWN);
-            entries.sendKeys(Keys.ARROW_DOWN);
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-        return true;
-    }
-
 
     public void RegNewCompl(String Reg_New_Complaint) {
 
@@ -273,17 +189,6 @@ public class TrackComplaint_Page {
         Thread.sleep(3000);
     }
 
-    public boolean visibility_PH_update_complaint() {
-
-        try {
-            return visible_view_edit.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-
-    }
-
     public void uploaded_document_click() {
         view_doc.click();
     }
@@ -292,28 +197,9 @@ public class TrackComplaint_Page {
         view_doc_close.click();
     }
 
-    public boolean visibility_uploaded_doc() {
-
-        try {
-            return visibility_uploaded_doc.isDisplayed();
-        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
-                 org.openqa.selenium.ElementNotInteractableException e) {
-            return false;
-        }
-
-    }
-
     public void enter_ComplaintDesc(String input) {
 
         Complaint_Description.sendKeys(input);
-    }
-
-    public String get_complaint_desc() {
-        return Complaint_Description.getAttribute("value");
-    }
-
-    public String get_complaint_dec_table() {
-        return complaint_register.getText();
     }
 
     public void update_complaint_desc() throws InterruptedException {
@@ -326,6 +212,198 @@ public class TrackComplaint_Page {
         selectyes.click();
     }
 
+    public void SelectCancelBtn_click() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,400)");
+        Thread.sleep(3000);
+        selectcancel.click();
+    }
+    public void handleDropdown(WebElement dropdown, int index) throws InterruptedException {
+        try {
+            Thread.sleep(3000);
+            Select branch_code_dropdown = new Select(dropdown);
+            branch_code_dropdown.selectByIndex(index);
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+    }
+    public void selectFeedbackForIGMSPortalEaseOfUse() throws InterruptedException {
+//        handleDropdown(feedbackForIGMSPortalEaseOfUse,1);
+        feedbackForIGMSPortalEaseOfUse.click();
+
+    }
+    public void selectResolutionSatisfactionLevel() throws InterruptedException {
+//        handleDropdown(resolutionSatisfactionLevel,1);
+        resolutionSatisfactionLevel.click();
+
+    }
+    public void downArrow() {
+        Actions action = new Actions(driver);
+
+        action.sendKeys(Keys.ARROW_DOWN).build().perform();
+    }
+
+    public void enterKeyBoard() {
+        Actions action = new Actions(driver);
+
+        action.sendKeys(Keys.ENTER).build().perform();
+    }
+    public void clickLogout(){
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].click();", logout);
+    }
+    public void click_Yes_Confirm_popup() {
+        try {
+            JavascriptExecutor jse = (JavascriptExecutor) driver;
+            jse.executeScript("arguments[0].click();", update_record_success);
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+    /*Getter Methods*/
+    public boolean OTP_Field_visible() {
+        try {
+            return OTP.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+    }
+
+
+    public boolean hasSpecialCharacters(String inputString) {
+        // Define a regular expression pattern for special characters
+        Pattern pattern = Pattern.compile("[^a-zA-Z0-9]");
+
+        // Use the matcher method to check for a match
+        Matcher matcher = pattern.matcher(inputString);
+
+        // Return true if a special character is found, otherwise false
+        return matcher.find();
+
+    }
+
+    public boolean registed_complaint_visibility() {
+        try {
+            return visible_track_complaint.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+    }
+
+
+    public boolean resend_button_visibility() {
+        try {
+            return Resend.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+    }
+
+
+    public boolean view_edit_complaint_visibility() {
+        try {
+            return View_Edit_Complaints.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+    }
+
+    public boolean reg_new_complaint_visibility() {
+        try {
+            return Reg_New_Complaint.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+
+    }
+
+    public boolean click_ok_with_return_value() {
+        boolean flag = true;
+        if(flag){
+            click_ok.click();
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
+    public boolean visibility_export() {
+        try {
+            return click_on_export.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean visibility_all_fields_of_table() {
+        try {
+            return visibility_table_heading.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+
+    public boolean show_entries() {
+        try {
+            entries.click();
+            entries.sendKeys(Keys.ARROW_DOWN);
+            entries.click();
+            entries.sendKeys(Keys.ARROW_DOWN);
+            entries.sendKeys(Keys.ARROW_DOWN);
+            entries.click();
+            entries.sendKeys(Keys.ARROW_DOWN);
+            entries.sendKeys(Keys.ARROW_DOWN);
+            entries.sendKeys(Keys.ARROW_DOWN);
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+        return true;
+    }
+
+
+    public boolean visibility_PH_update_complaint() {
+
+        try {
+            return visible_view_edit.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+
+    }
+
+
+    public boolean visibility_uploaded_doc() {
+
+        try {
+            return visibility_uploaded_doc.isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException |
+                 org.openqa.selenium.ElementNotInteractableException e) {
+            return false;
+        }
+
+    }
+
+
+    public String get_complaint_desc() {
+        return Complaint_Description.getAttribute("value");
+    }
+
+    public String get_complaint_dec_table() {
+        return complaint_register.getText();
+    }
+
     public boolean visibilityOfYesBtn() {
 
         try {
@@ -336,11 +414,5 @@ public class TrackComplaint_Page {
 
     }
 
-    public void SelectCancelBtn_click() throws InterruptedException {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)");
-        Thread.sleep(3000);
-        selectcancel.click();
-    }
 
 }

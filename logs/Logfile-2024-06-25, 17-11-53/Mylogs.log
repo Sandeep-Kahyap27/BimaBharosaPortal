@@ -1,0 +1,6 @@
+2024-06-25T17:13:43,086 [main] INFO  (Test_0_ViewEditComplaintPage_Visibility.java:40) - View Edit Complanint Page Visibile Successfully.
+2024-06-25T17:13:43,467 [main] INFO  (Test_0_ViewEditComplaintPage_Visibility.java:57) - Advance Search Filter parameter Visibile successfully.
+2024-06-25T17:13:43,792 [main] INFO  (Test_0_ViewEditComplaintPage_Visibility.java:75) - Status Type Checkbox Visibile successfully.
+2024-06-25T17:13:43,931 [main] INFO  (Test_0_ViewEditComplaintPage_Visibility.java:90) - TAT Type Checkbox Visibile successfully.
+2024-06-25T17:13:46,796 [main] INFO  (Test_0_ViewEditComplaintPage_Visibility.java:107) - Clear button working properly.
+2024-06-25T17:13:47,284 [main] INFO  (Test_0_ViewEditComplaintPage_Visibility.java:128) - Clear button is not working properly.

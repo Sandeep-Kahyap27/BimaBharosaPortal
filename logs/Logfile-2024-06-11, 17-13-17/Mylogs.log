@@ -1,0 +1,16 @@
+2024-06-11T17:13:45,453 [main] INFO  (Test_CallCenterModule.java:46) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-11T17:13:51,947 [main] INFO  (Test_CallCenterModule.java:70) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-11T17:13:52,014 [main] INFO  (Test_CallCenterModule.java:88) - Test Passed : Identify By drop down is visible on the web page
+2024-06-11T17:13:52,062 [main] INFO  (Test_CallCenterModule.java:97) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-11T17:13:52,102 [main] INFO  (Test_CallCenterModule.java:106) - Test Passed : Search button present on the web page
+2024-06-11T17:13:52,168 [main] INFO  (Test_CallCenterModule.java:115) - Test Passed : PinCode checkbox and field visible
+2024-06-11T17:13:56,489 [main] INFO  (Test_CallCenterModule.java:134) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-11T17:13:57,879 [main] INFO  (Test_CallCenterModule.java:153) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-11T17:13:57,910 [main] INFO  (Test_CallCenterModule.java:170) - Test Passed : Search button is enabled
+2024-06-11T17:14:04,298 [main] INFO  (Test_CallCenterModule.java:190) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-11T17:14:06,621 [main] INFO  (Test_CallCenterModule.java:212) - Test Passed : Error message displayed for empty mobile number
+2024-06-11T17:14:10,957 [main] INFO  (Test_CallCenterModule.java:236) - Test Passed : Error message displayed for less than 10 digit mobile number
+2024-06-11T17:14:20,905 [main] INFO  (Test_CallCenterModule.java:271) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-11T17:14:24,185 [main] INFO  (Test_CallCenterModule.java:292) - Test Passed : Warning pop up displayed when searching with empty emailID field
+2024-06-11T17:14:29,604 [main] INFO  (Test_CallCenterModule.java:313) - Test Passed : Warning popUp displayed for invalid email Id
+2024-06-11T17:14:34,138 [main] INFO  (Test_CallCenterModule.java:339) - Test Passed : Pin code checkbox enabled and field displayed

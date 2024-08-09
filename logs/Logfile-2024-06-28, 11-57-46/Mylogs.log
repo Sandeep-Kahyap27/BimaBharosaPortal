@@ -1,0 +1,28 @@
+2024-06-28T11:58:07,017 [main] INFO  (Test_URLCaseSensitive_Negative.java:34) - Test Passed : URL is redirecting to the correct page
+2024-06-28T11:58:20,389 [main] INFO  (Test_ComplaintRegistrationModule.java:39) - Test Passed : Home Page URL is as expected
+2024-06-28T11:58:20,441 [main] INFO  (Test_ComplaintRegistrationModule.java:56) - Test Passed : Register Complaint button is visible
+2024-06-28T11:58:20,473 [main] INFO  (Test_ComplaintRegistrationModule.java:66) - Test Passed : Register Complaint button is clickable
+2024-06-28T11:58:26,632 [main] INFO  (Test_ComplaintRegistrationModule.java:91) - Test Passed : Registration page URL is correct
+2024-06-28T11:58:26,649 [main] INFO  (Test_ComplaintRegistrationModule.java:112) - Test Passed : Registration page title is correct
+2024-06-28T11:58:27,360 [main] INFO  (Test_ComplaintRegistrationModule.java:136) - Test Passed : Mobile field validation without entering any number passed!
+2024-06-28T11:58:30,528 [main] INFO  (Test_ComplaintRegistrationModule.java:161) - Test Passed : Mobile field validation with invalid any number passed!
+2024-06-28T11:58:33,774 [main] INFO  (Test_ComplaintRegistrationModule.java:188) - Test Passed : Mobile number length is valid.
+2024-06-28T11:58:40,331 [main] INFO  (Test_ComplaintRegistrationModule.java:222) - Test Passed : Mobile number entered successfully
+2024-06-28T11:58:49,695 [main] INFO  (Test_ComplaintRegistrationModule.java:246) - Test Passed : Initial_Display, Validate button is displayed
+2024-06-28T11:58:52,816 [main] INFO  (Test_ComplaintRegistrationModule.java:267) - Test Passed : Error message displayed for empty OTP
+2024-06-28T11:59:05,456 [main] INFO  (Test_ComplaintRegistrationModule.java:290) - Test Passed : Alphabetic characters is not considered as OTP
+2024-06-28T11:59:18,115 [main] INFO  (Test_ComplaintRegistrationModule.java:314) - Test Passed : Special characters are not considered as OTP
+2024-06-28T11:59:30,819 [main] INFO  (Test_ComplaintRegistrationModule.java:337) - Test Passed : Invalid OTP not considered
+2024-06-28T11:59:46,934 [main] INFO  (Test_ComplaintRegistrationModule.java:359) - Test Passed : Resend OTP button is visible after 60s
+2024-06-28T11:59:50,015 [main] INFO  (Test_ComplaintRegistrationModule.java:380) - Test Passed : Resend OTP button is enabled
+2024-06-28T11:59:56,418 [main] INFO  (Test_ComplaintRegistrationModule.java:401) - Test Passed : Valid OTP validation successful!
+2024-06-28T12:00:05,681 [main] INFO  (Test_ComplaintRegistrationModule.java:429) - Test Passed : Error message displayed for empty pin code field.
+2024-06-28T12:00:05,945 [main] INFO  (Test_ComplaintRegistrationModule.java:455) - Test Passed : Error message displayed for invalid PIN code.
+2024-06-28T12:00:07,150 [main] INFO  (Test_ComplaintRegistrationModule.java:478) - Test Passed : Pin code length is correct
+2024-06-28T12:00:08,399 [main] INFO  (Test_ComplaintRegistrationModule.java:498) - Test Passed : District populated based on valid pinCode
+2024-06-28T12:00:08,432 [main] INFO  (Test_ComplaintRegistrationModule.java:507) - Test Passed : State populated based on valid pinCode
+2024-06-28T12:01:15,486 [main] INFO  (Test_ComplaintRegistration_InsCompany.java:63) - Test Passed : Complaint Registered Against Insurance company Successfully.
+2024-06-28T12:02:06,089 [main] INFO  (Test_ComplaintRegistration_InsCompany.java:76) - Test Passed : Complaint not registering with duplicate policy number and complaint description
+2024-06-28T12:03:38,308 [main] INFO  (Test_ComplaintRegistration_UnregEntity.java:69) - Test Passed : Complaint Registered Against Unregistered Entity with Insurance Company Involvement.
+2024-06-28T12:04:46,528 [main] INFO  (Test_ComplaintRegistration_UnregEntity_WithoutInsCompany.java:62) - Test Passed : Complaint Registered Against Unregistered Entity without Insurance Company Involvement.
+2024-06-28T12:06:03,374 [main] INFO  (Test_ComplaintRegistration_InsIntermediary.java:58) - Test Passed : Complaint Registered Against Insurance Intermediary.

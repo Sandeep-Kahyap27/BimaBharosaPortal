@@ -1,0 +1,15 @@
+2024-06-11T16:17:39,403 [main] INFO  (Test_CallCenterModule.java:44) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-11T16:17:46,096 [main] INFO  (Test_CallCenterModule.java:68) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-11T16:17:46,151 [main] INFO  (Test_CallCenterModule.java:86) - Test Passed : Identify By drop down is visible on the web page
+2024-06-11T16:17:46,185 [main] INFO  (Test_CallCenterModule.java:95) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-11T16:17:46,201 [main] INFO  (Test_CallCenterModule.java:104) - Test Passed : Search button present on the web page
+2024-06-11T16:17:46,366 [main] INFO  (Test_CallCenterModule.java:113) - Test Passed : PinCode checkbox and field visible
+2024-06-11T16:17:50,688 [main] INFO  (Test_CallCenterModule.java:132) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-11T16:17:52,056 [main] INFO  (Test_CallCenterModule.java:151) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-11T16:17:52,083 [main] INFO  (Test_CallCenterModule.java:168) - Test Passed : Search button is enabled
+2024-06-11T16:17:58,494 [main] INFO  (Test_CallCenterModule.java:188) - Test Passed : Error popUp displayed for invalid mobile number
+2024-06-11T16:18:00,826 [main] INFO  (Test_CallCenterModule.java:210) - Test Passed : Error message displayed for empty mobile number
+2024-06-11T16:18:05,160 [main] INFO  (Test_CallCenterModule.java:234) - Test Passed : Error message displayed for less than 10 digit mobile number
+2024-06-11T16:18:15,104 [main] INFO  (Test_CallCenterModule.java:269) - Test Passed : Email ID option present and it's label and field is visible
+2024-06-11T16:18:18,446 [main] INFO  (Test_CallCenterModule.java:290) - Test Passed : Warning pop up displayed when searching with empty emailID field
+2024-06-11T16:18:23,943 [main] INFO  (Test_CallCenterModule.java:311) - Test Passed : Warning popUp displayed for invalid email Id

@@ -1,0 +1,6 @@
+2024-06-12T12:23:28,076 [main] INFO  (Test_CallCenterModule.java:45) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-12T12:23:35,531 [main] INFO  (Test_CallCenterModule.java:70) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-12T12:23:37,006 [main] INFO  (Test_CallCenterModule.java:159) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-12T12:23:41,463 [main] INFO  (Test_CallCenterModule.java:348) - Test Passed : Pin code field is visible
+2024-06-12T12:23:43,818 [main] INFO  (Test_CallCenterModule.java:360) - Test Passed : District populated based on valid pinCode
+2024-06-12T12:23:43,868 [main] INFO  (Test_CallCenterModule.java:369) - Test Failed : State populated based on valid pinCode

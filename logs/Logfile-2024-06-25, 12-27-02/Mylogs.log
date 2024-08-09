@@ -1,0 +1,8 @@
+2024-06-25T12:27:31,566 [main] INFO  (Test_CallCenterViewEdit.java:46) - Test Pass : Navigation to the View/Edit page is successful
+2024-06-25T12:27:37,906 [main] INFO  (Test_CallCenterViewEdit.java:92) - Test Pass : All buttons are visible and clickable on View/Edit Page
+2024-06-25T12:27:44,047 [main] INFO  (Test_CallCenterViewEdit.java:112) - Test Pass : Correct error messages displayed when searching without data
+2024-06-25T12:27:48,287 [main] INFO  (Test_CallCenterViewEdit.java:135) - Test Passed : The table shows zero entities with Invalid Complaint Number .
+2024-06-25T12:27:55,570 [main] INFO  (Test_CallCenterViewEdit.java:189) - Test Passed : The table shows zero entities with Invalid Entity Reference Number.
+2024-06-25T12:28:02,819 [main] INFO  (Test_CallCenterViewEdit.java:242) - Test Passed : The table shows zero entities with Invalid Policy Number.
+2024-06-25T12:28:10,091 [main] INFO  (Test_CallCenterViewEdit.java:295) - Test Passed : The table shows zero entities with Invalid Complainant Name.
+2024-06-25T12:28:17,341 [main] INFO  (Test_CallCenterViewEdit.java:346) - Test Passed : The table shows zero entities with Invalid Mobile Number

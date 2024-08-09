@@ -1,0 +1,5 @@
+2024-06-26T15:03:08,808 [main] INFO  (Test_CallCenterEscalateComplaint.java:154) - Test Pass : Escalation can not be empty
+2024-06-26T15:03:15,107 [main] INFO  (Test_CallCenterEscalateComplaint.java:181) - Test Pass : Error message displayed when entering less than 20 characters in escalation field
+2024-06-26T15:03:21,482 [main] INFO  (Test_CallCenterEscalateComplaint.java:205) - Test Pass : Error message displayed for special characters in escalation field
+2024-06-26T15:03:33,368 [main] INFO  (Test_CallCenterEscalateComplaint.java:228) - Test Passed : Complaint Escalated Successfully
+2024-06-26T15:03:40,159 [main] INFO  (Test_CallCenterEscalateComplaint.java:241) - Test Passed : Complaint status matching with Escalated status

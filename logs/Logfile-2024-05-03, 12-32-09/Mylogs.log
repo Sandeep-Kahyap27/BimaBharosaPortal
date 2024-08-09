@@ -1,0 +1,15 @@
+2024-05-03T12:32:34,292 [main] ERROR (Test_TrackingComplaint.java:27) - Mobile number field accepting alphabet and special characters
+2024-05-03T12:32:36,549 [main] INFO  (Test_TrackingComplaint.java:51) - With unregistered mobile number not able to track complaint
+2024-05-03T12:32:43,053 [main] INFO  (Test_TrackingComplaint.java:67) - With registered mobile number able to track complaint
+2024-05-03T12:32:43,210 [main] INFO  (Test_TrackingComplaint.java:83) - After entering one digit of OTP next digit OTP field is appearing
+2024-05-03T12:33:17,001 [main] INFO  (Test_TrackingComplaint.java:104) - After entering invalid OTP next page is not appearing
+2024-05-03T12:34:17,072 [main] INFO  (Test_TrackingComplaint.java:117) - After waiting for 60 seconds resend button is visible
+2024-05-03T12:35:23,202 [main] INFO  (Test_TrackingComplaint.java:135) - After clicking resend bttton and waiting for 60 seconds resend button again visible
+2024-05-03T12:36:01,939 [main] INFO  (Test_TrackingComplaint.java:157) - After entering special character as OTP next page is not appearing
+2024-05-03T12:36:05,813 [main] INFO  (Test_TrackingComplaint.java:171) - after entering OTP arrow field is visible
+2024-05-03T12:36:07,365 [main] INFO  (Test_TrackingComplaint.java:188) - After entering valid OTP next page is appearing
+2024-05-03T12:36:08,634 [main] INFO  (Test_TrackingComplaint.java:203) - Export button is visible
+2024-05-03T12:36:08,706 [main] INFO  (Test_TrackingComplaint.java:218) - all the fields visible on table.
+2024-05-03T12:36:15,092 [main] INFO  (Test_TrackingComplaint.java:236) - After clicking on menu button,  complaints dropdown visible
+2024-05-03T12:37:02,335 [main] INFO  (Test_TrackingComplaint.java:283) - Complaint not registering with duplicate policy number and complaint description
+2024-05-03T12:38:08,975 [main] ERROR (Test_TrackingComplaint.java:308) - user not able to handle show entries dropdown

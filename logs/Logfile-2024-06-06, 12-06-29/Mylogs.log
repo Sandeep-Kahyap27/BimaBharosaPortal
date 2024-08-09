@@ -1,0 +1,2 @@
+2024-06-06T12:07:26,933 [main] INFO  (Test_CallCenterModule.java:41) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-06T12:07:34,371 [main] INFO  (Test_CallCenterModule.java:65) - Test Passed : User is able to open Registration Against Entity By IRDAI Page

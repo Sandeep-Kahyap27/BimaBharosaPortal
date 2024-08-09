@@ -1,0 +1,16 @@
+2024-06-28T11:53:47,384 [main] INFO  (Test_Login.java:36) - Test Passed : Login and Clear buttons are visible and clickable
+2024-06-28T11:53:47,487 [main] INFO  (Test_Login.java:53) - Test Passed : Captcha is visible on login page
+2024-06-28T11:53:47,655 [main] INFO  (Test_Login.java:74) - Test Passed : Captcha refresh is working. The captcha has changed.
+2024-06-28T11:53:49,928 [main] INFO  (Test_Login.java:94) - Test Passed : Clear button functionality
+2024-06-28T11:54:02,779 [main] INFO  (Test_Login.java:119) - Test Passed : Correct error messages displayed for empty fields.
+2024-06-28T11:54:04,072 [main] INFO  (Test_Login.java:139) - Test Passed : Correct error messages displayed for empty Username
+2024-06-28T11:54:05,323 [main] INFO  (Test_Login.java:160) - Test Passed : Correct error messages displayed for empty Password
+2024-06-28T11:54:06,703 [main] INFO  (Test_Login.java:184) - Test Passed : Correct error messages displayed for Invalid Username
+2024-06-28T11:54:11,293 [main] INFO  (Test_Login.java:212) - Test Passed : Correct error messages displayed for Invalid Password
+2024-06-28T11:54:12,640 [main] INFO  (Test_Login.java:235) - Test Passed : Correct error messages displayed for Invalid Username and Password
+2024-06-28T11:54:14,108 [main] INFO  (Test_Login.java:261) - Test Passed : Correct error messages displayed for Empty Captcha
+2024-06-28T11:54:15,507 [main] INFO  (Test_Login.java:286) - Test Passed : Correct error messages displayed for Invalid Captcha
+2024-06-28T11:54:42,664 [main] INFO  (Test_Login.java:307) - Test Passed : Correct error messages displayed for Case Sensitive Username and Password
+2024-06-28T11:54:46,065 [main] INFO  (Test_Login.java:333) - Test Passed : Expected Hindi UI present on the page.
+2024-06-28T11:54:48,892 [main] INFO  (Test_Login.java:359) - Test Passed : Expected English UI present on the page.
+2024-06-28T11:55:00,446 [main] INFO  (Test_Login.java:383) - Test Passed : Login is successful

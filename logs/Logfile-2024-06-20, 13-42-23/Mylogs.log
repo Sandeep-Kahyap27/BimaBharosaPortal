@@ -1,0 +1,19 @@
+2024-06-20T13:42:59,103 [main] INFO  (Test_CallCenterModule.java:47) - Test Passed : Menu button is visible and clickable on the web page
+2024-06-20T13:43:04,968 [main] INFO  (Test_CallCenterModule.java:72) - Test Passed : User is able to open Registration Against Entity By IRDAI Page
+2024-06-20T13:43:05,066 [main] INFO  (Test_CallCenterModule.java:91) - Test Passed : Identify By drop down is visible on the web page
+2024-06-20T13:43:05,101 [main] INFO  (Test_CallCenterModule.java:101) - Test Passed : Mobile number or Email input field is visible on the page
+2024-06-20T13:43:05,147 [main] INFO  (Test_CallCenterModule.java:111) - Test Passed : Search button present on the web page
+2024-06-20T13:43:05,218 [main] INFO  (Test_CallCenterModule.java:121) - Test Passed : PinCode checkbox is visible and enabled
+2024-06-20T13:43:09,438 [main] INFO  (Test_CallCenterModule.java:141) - Test Passed : Is Complaint Registered radio buttons are clickable
+2024-06-20T13:43:10,866 [main] INFO  (Test_CallCenterModule.java:161) - Test Passed : Mobile Number option present and it's label and field is visible
+2024-06-20T13:43:10,898 [main] INFO  (Test_CallCenterModule.java:179) - Test Passed : Search button is enabled
+2024-06-20T13:43:15,250 [main] INFO  (Test_CallCenterModule.java:268) - Test Passed : Existing user details displayed correctly with valid mobile number
+2024-06-20T13:43:15,487 [main] INFO  (Test_CallCenterModule.java:373) - Test Passed : Pin code field is visible
+2024-06-20T13:43:19,009 [main] INFO  (Test_CallCenterModule.java:413) - Test Passed : District and state auto populated for valid pinCode
+2024-06-20T13:43:19,190 [main] INFO  (Test_CallCenterModule.java:430) - Test Passed : Call center user is able to interact with complaint against dropdown
+2024-06-20T13:43:21,579 [main] INFO  (Test_CallCenterModule.java:447) - Test Passed : Required fields are displayed for complaint against insurance company
+2024-06-20T13:43:23,934 [main] INFO  (Test_CallCenterModule.java:466) - Test Passed : Expected error message displayed for select option in complaint against dropdown
+2024-06-20T13:43:30,711 [main] INFO  (Test_CallCenterModule.java:534) - Test Passed : Required fields are visible for complaint against unregistered entity with involvement of insurance company
+2024-06-20T13:43:38,290 [main] INFO  (Test_CallCenterModule.java:555) - Test Passed : Only Required fields are visible for complaint against unregistered entity without involvement of insurance company
+2024-06-20T13:43:38,368 [main] INFO  (Test_CallCenterModule.java:573) - Test Passed : All identifier type radio buttons are enabled
+2024-06-20T13:43:38,651 [main] INFO  (Test_CallCenterModule.java:593) - Test Passed : Error message displayed for empty policy/proposal/certificate/claim number field

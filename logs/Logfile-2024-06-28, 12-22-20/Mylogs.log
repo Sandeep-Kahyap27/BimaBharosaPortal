@@ -1,0 +1,17 @@
+2024-06-28T12:27:43,329 [main] INFO  (Test_1_ViewEditComplaintPage_Visibility.java:42) - Test Pass: View Edit Complanint Page Visibile Successfully.
+2024-06-28T12:27:43,519 [main] INFO  (Test_1_ViewEditComplaintPage_Visibility.java:56) - Test Pass: Advance Search Filter parameter Visibile successfully.
+2024-06-28T12:27:43,717 [main] INFO  (Test_1_ViewEditComplaintPage_Visibility.java:69) - Test Pass: Status Type Checkbox Visibile successfully.
+2024-06-28T12:27:43,920 [main] INFO  (Test_1_ViewEditComplaintPage_Visibility.java:82) - Test Pass: TAT Type Checkbox Visibile successfully.
+2024-06-28T12:27:44,781 [main] INFO  (Test_1_ViewEditComplaintPage_Visibility.java:97) - Test Pass: Clear button working properly.
+2024-06-28T12:27:45,263 [main] ERROR (Test_1_ViewEditComplaintPage_Visibility.java:116) - Test Fail: Clear button is not working properly.
+2024-06-28T12:31:50,965 [main] INFO  (Test_2_SearchComplaintByStatus.java:45) - Test Pass: Searched New status complaint Visibile successfully.
+2024-06-28T12:31:59,018 [main] INFO  (Test_2_SearchComplaintByStatus.java:63) - Test Pass: Searched Acknowledged status complaint Visibile successfully.
+2024-06-28T12:32:06,839 [main] INFO  (Test_2_SearchComplaintByStatus.java:82) - Test Pass: Searched Pending status complaint Visibile successfully.
+2024-06-28T12:32:14,953 [main] INFO  (Test_2_SearchComplaintByStatus.java:103) - Test Pass: Searched AttendedTo status complaint Visibile successfully.
+2024-06-28T12:32:21,969 [main] ERROR (Test_2_SearchComplaintByStatus.java:129) - Test Fail: Searched Escalated status complaint is not Visibile.
+2024-06-28T12:32:29,472 [main] INFO  (Test_2_SearchComplaintByStatus.java:148) - Test Pass: Searched Re-open status complaint Visibile successfully.
+2024-06-28T12:32:37,122 [main] INFO  (Test_2_SearchComplaintByStatus.java:172) - Test Pass: Searched Closed status complaint Visibile successfully.
+2024-06-28T12:32:43,771 [main] INFO  (Test_2_SearchComplaintByStatus.java:198) - Test Pass: Searched TAT between 15 to 30 days complaint Visibile successfully.
+2024-06-28T12:32:50,453 [main] INFO  (Test_2_SearchComplaintByStatus.java:225) - Test Pass: Searched TAT between 31 to 60 days complaint Visibile successfully.
+2024-06-28T12:32:56,994 [main] INFO  (Test_2_SearchComplaintByStatus.java:254) - Test Pass: Searched TAT Greater Than Two Month complaint Visibile successfully.
+2024-06-28T12:33:03,099 [main] INFO  (Test_2_SearchComplaintByStatus.java:273) - Test Pass: View Edit icon is Visibile successfully.

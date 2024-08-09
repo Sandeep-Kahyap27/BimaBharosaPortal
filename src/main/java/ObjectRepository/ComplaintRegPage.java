@@ -125,6 +125,9 @@ public class ComplaintRegPage {
     @FindBy(xpath = "//p[text()='Complaint Registered Successfully.']")
     private WebElement registrationMsg;
 
+    @FindBy(xpath = "//span[@id='lblTokenNumber']")
+    private WebElement complaintNumber;
+
     @FindBy(id = "warningMessage")
     private WebElement warningMessage;
 
@@ -171,7 +174,7 @@ public class ComplaintRegPage {
         PageFactory.initElements(driver, this);
     }
 
-
+    /*Action methods*/
     public void enterName(String name) {
 
         try{
@@ -193,6 +196,7 @@ public class ComplaintRegPage {
         }
 
     }
+
 
     public void mobileNumClk(){
         try{
@@ -243,7 +247,6 @@ public class ComplaintRegPage {
     }
 
     public void pinCodeClick(){
-
         pinCode.click();
     }
 
@@ -276,7 +279,6 @@ public class ComplaintRegPage {
         catch(ElementNotInteractableException e){
             e.printStackTrace();
         }
-
 
     }
 
@@ -543,37 +545,7 @@ public class ComplaintRegPage {
 
     }
 
-    public boolean registerComplaint() throws InterruptedException {
-        Thread.sleep(3000);
 
-        try{
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-            wait.until(ExpectedConditions.elementToBeClickable(ackPopUp));
-            ackPopUp.click();
-            return true;
-        }
-        catch (Exception e){
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-            wait.until(ExpectedConditions.elementToBeClickable(duplicateWarningError));
-            duplicateWarningError.click();
-            return false;
-        }
-
-    }
-
-    public String getMessage() {
-        if (ackPopUp.isDisplayed())
-        {
-            return registrationMsg.getText();
-        }
-        else if (duplicateWarningError.isDisplayed())
-        {
-            return warningMessage.getText();
-        }
-        else{
-            return  null;
-        }
-    }
 
     public void emailText() {
 
@@ -643,6 +615,86 @@ public class ComplaintRegPage {
     }
 
 
+    public void resendotpClick() {
+
+        resendotpgettxt.click();
+    }
+
+
+    public void explicitWaitForResendbtn(){
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOf(resendotpgettxt));
+
+    }
+
+
+    public void invalidpinCdsendkeys(){
+
+        pinCode.sendKeys("111222");
+    }
+
+    public void pincodeclear(){
+
+        pinCode.clear();
+    }
+
+
+
+    /*Getter Methods*/
+    public boolean getMobFieldStatus() {
+
+        return mobileNumber.isEnabled();
+    }
+
+    public boolean getStateStatus() {
+
+        boolean status = false;
+        try{
+            state.getAttribute("aria-invalid");
+            status = true;
+            return status;
+        }
+        catch (Exception e){
+            return status;
+        }
+    }
+
+    public boolean getDistrictStatus() {
+
+        boolean status = false;
+        try{
+            district.getAttribute("aria-invalid");
+            status = true;
+            return status;
+        }
+        catch (Exception e){
+            return status;
+        }
+    }
+
+    public String invalidPinCodeErrorText(){
+        System.out.println(invalidPinCodeError.getText());
+        return invalidPinCodeError.getText();
+
+    }
+
+    public String emptyPinCodeErrorText(){
+        System.out.println(emptypinCodeError.getText());
+        return emptypinCodeError.getText();
+
+    }
+
+    public boolean getResendOTPbtnStatus(){
+
+        return PleaseEnteroneTimeOtpgettxt.isEnabled();
+    }
+
+    public boolean otpwarningMg() {
+
+        return otpwarningMessage.isDisplayed();
+    }
+
     public String txtmoberrorm() {
 
         return txtmoberror.getText();
@@ -659,85 +711,41 @@ public class ComplaintRegPage {
         return resendotpgettxt.isDisplayed();
     }
 
-
-    public void resendotpClick() {
-
-        resendotpgettxt.click();
+    public String getMessage() {
+        if (ackPopUp.isDisplayed())
+        {
+            return registrationMsg.getText();
+        }
+        else if (duplicateWarningError.isDisplayed())
+        {
+            return warningMessage.getText();
+        }
+        else{
+            return  null;
+        }
     }
 
-    public boolean otpwarningMg() {
+    public boolean registerComplaint() throws InterruptedException {
+        Thread.sleep(3000);
 
-        return otpwarningMessage.isDisplayed();
-    }
-
-    public void explicitWaitForResendbtn(){
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        wait.until(ExpectedConditions.visibilityOf(resendotpgettxt));
-
-    }
-
-
-    public boolean getResendOTPbtnStatus(){
-
-        return PleaseEnteroneTimeOtpgettxt.isEnabled();
-    }
-
-
-    public String emptyPinCodeErrorText(){
-        System.out.println(emptypinCodeError.getText());
-        return emptypinCodeError.getText();
-
-    }
-
-    public String invalidPinCodeErrorText(){
-        System.out.println(invalidPinCodeError.getText());
-        return invalidPinCodeError.getText();
-
-    }
-
-
-    public void invalidpinCdsendkeys(){
-
-        pinCode.sendKeys("111222");
-    }
-
-    public void pincodeclear(){
-
-        pinCode.clear();
-    }
-
-
-    //Getters
-    public boolean getDistrictStatus() {
-
-        boolean status = false;
         try{
-            district.getAttribute("aria-invalid");
-            status = true;
-            return status;
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+            wait.until(ExpectedConditions.elementToBeClickable(ackPopUp));
+            ackPopUp.click();
+            return true;
         }
         catch (Exception e){
-            return status;
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+            wait.until(ExpectedConditions.elementToBeClickable(duplicateWarningError));
+            duplicateWarningError.click();
+            return false;
         }
+
     }
 
-    public boolean getStateStatus() {
+    public String getComplaintNumber(){
 
-        boolean status = false;
-        try{
-            state.getAttribute("aria-invalid");
-            status = true;
-            return status;
-        }
-        catch (Exception e){
-            return status;
-        }
-    }
-
-    public boolean getMobFieldStatus() {
-
-        return mobileNumber.isEnabled();
+        return  complaintNumber.getText();
     }
 
 
